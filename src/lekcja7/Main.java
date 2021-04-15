@@ -9,6 +9,10 @@ public class Main {
 //          - Napisz metodę liczącą i zwracającą pole trójkąta (przyjmuje a i h)
 //          -* Dla ambitnych: napisz metodę sprawdzającą, czy dana liczba należy do ciągu Fibonacciego
 
+
+        System.out.println(poleKwadratu(5));
+        System.out.println(porownywaczka(10, 5));
+
 //        2. Tablice
 //          Potrzebujemy przechowywać sobie 5 liczb - 5 zmiennych, 100 liczb - 100 zmiennych. No trochę niewygodne.
 //
@@ -27,27 +31,49 @@ public class Main {
 
         System.out.println(imie1);
         System.out.println(imie2);
-
+        System.out.println("-=============================-");
 //        Jak wypisać wszystko co jest w danej tablicy?
-        for (int i = 0; i < imiona.length; i++) {
-            System.out.println(imiona[i]);
+        for (String s : imiona) {
+            System.out.println(s);
         }
 
+        imiona[0] = "Staszek";
+        System.out.println("-=============================-");
+
+        wypisywaczka(imiona);
 //        forEach
 
-//        Napisać metodę przyjmującą tablicę liczb naturalnych i zwracającą ich sumę.
+
+        int[] liczby2 = {5,6,1,2,90};
+        System.out.println(znajdzNajmniejsza(liczby2));
     }
 
-
-    private static void poleKwadratu(int bok) {
-        System.out.println(bok * bok);
+    private static int poleKwadratu(int bok) {
+        return bok * bok;
     }
 
-    public static void porownywaczka(int garnek, int patelnia) {
+    public static int porownywaczka(int garnek, int patelnia) {
         if (garnek > patelnia) {
-            System.out.println(garnek);
+            return garnek;
         } else {
-            System.out.println(patelnia);
+            return patelnia;
         }
+    }
+
+    public static void wypisywaczka(String[] tablica) {
+        for (String slowo : tablica) {
+            System.out.println(slowo);
+        }
+    }
+
+    public static int znajdzNajmniejsza(int[] tablica) {
+        int najmniejsza = tablica[0];
+
+        for (int liczba : tablica) {
+            if (liczba < najmniejsza) {
+                najmniejsza = liczba;
+            }
+        }
+        return najmniejsza;
     }
 }
