@@ -84,6 +84,14 @@ public class Main {
 //        char znak = witaj.charAt(1);
 //        System.out.println(znak);
 
+        String tekst = "Ala ma kota, a kot ma ale";
+        System.out.println(tekst.contains("ma"));
+
+        String[] podzielone = tekst.split("ma");
+
+        for(String element : podzielone) {
+            System.out.println(element);
+        }
 //        4. Wejście/wyjście I/O
 
 //      Wyjście
