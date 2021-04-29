@@ -2,6 +2,8 @@ package lekcja8;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -23,19 +25,19 @@ public class Main {
 //
 //        wynik = liczba & 15;
 //        System.out.println("liczba & 15 = " + wynik);
-//
-//        // | bitowy or
+
+        // | bitowy or
 //        wynik = liczba | 1;
 //        System.out.println("liczba | 1 = " + wynik);
 //
 //        wynik = liczba | 15;
 //        System.out.println("liczba | 15 = " + wynik);
 //
-//        // >> przesunięcie bitowe w prawo
+        // >> przesunięcie bitowe w prawo
 //        wynik = 4 >> 1;
 //        System.out.println("4 >> 1 = " + wynik);
 //
-//        // << przesunięcie bitowe w lewo
+        // << przesunięcie bitowe w lewo
 //        wynik = 4 << 1;
 //        System.out.println("4 << 1 = " + wynik);
 
@@ -45,34 +47,34 @@ public class Main {
 
 
 //        3. Łańcuchy - String
-        String powitanie = "Cześć";
-        System.out.println(powitanie);
+//        String powitanie = "Cześć";
+//        System.out.println(powitanie);
 
 //        wyciąganie kawałka
-        String kawalek = powitanie.substring(0, 3);
-        System.out.println(kawalek);
+//        String kawalek = powitanie.substring(0, 3);
+//        System.out.println(kawalek);
 
 //        składanie wielu stringów
-        String nieLadne = "brzydkie";
-        String wyrazenie = "slowo";
-
-        String wiadomosc = nieLadne + wyrazenie;
-        System.out.println(wiadomosc);
-
+//        String nieLadne = "brzydkie";
+//        String wyrazenie = "slowo";
+//
+//        String wiadomosc = nieLadne + wyrazenie;
+//        System.out.println(wiadomosc);
+//
 //        składanie stringa z nieStringiem
-        int wiek = 18;
-        String ania = "Ania";
-
-        System.out.println(ania + " ma " + wiek + " lat ");
+//        int wiek = 18;
+//        String ania = "Ania";
+//
+//        System.out.println(ania + " ma " + wiek + " lat ");
 
 //        Znaki specjalne
-        System.out.println("Jej mąż nazywany był \"Baryłem\"");
-        System.out.println("\tLubił platformy \nale bardziej grać w gry");
+//        System.out.println("Jej mąż nazywany był \"Baryłem\"");
+//        System.out.println("\tLubił platformy \nale bardziej grać w gry");
 
 //          Pusty łańcuch
 
 
-//        String pusty = "";
+//        String pusty = " ";
 //
 //        System.out.println(pusty.length() == 0);
 //        System.out.println(pusty.isEmpty());
@@ -80,22 +82,48 @@ public class Main {
 //        2. charAt
 //        String witaj = "elo";
 //        System.out.println(witaj);
-//
-//        char znak = witaj.charAt(1);
+
+//        char znak = witaj.charAt(0);
 //        System.out.println(znak);
 
-        String tekst = "Ala ma kota, a kot ma ale";
-        System.out.println(tekst.contains("ma"));
+//        String tekst = "Ala ma kota, a kot ma ale";
+//        System.out.println(tekst.contains("ma"));
 
-        String[] podzielone = tekst.split("ma");
+//        String[] podzielone = tekst.split(",");
+//
+//        for(String element : podzielone) {
+//            System.out.println(element);
+//        }
 
-        for(String element : podzielone) {
-            System.out.println(element);
-        }
+
+        String tekst1 = "Ala ma kota\n, a kot ma ale\n a pies ma kota";
+
+//      Policz ile linii ma ten String
+//      Policz ile razy występuje w tym String'u słowo "ma"
+//        int licznikLinii = 0;
+//
+//
+//        String linijka1 = tekst1.substring(tekst1.indexOf("\n") + 1);
+//        String linijka2 = linijka1.substring(linijka1.indexOf("\n") + 1);
+//        System.out.println("linijka1:" + linijka1);
+//        System.out.println("linijka2:" + linijka2);
+//
+//
+//        while(tekst1.contains("\n")) {
+//            licznikLinii++;
+//            tekst1 = tekst1.substring(tekst1.indexOf("\n") +1);
+//        }
+//
+//        System.out.println("Ilosc linii to: " + licznikLinii);
+//
+//
+
+        String[] split = tekst1.split("\n");
+        System.out.println(split.length);
 //        4. Wejście/wyjście I/O
 
 //      Wyjście
-//        System.out.println("No elo");
+        System.out.println("No elo");
 
 //      Wejście
 //        Scanner in = new Scanner(System.in);
@@ -106,10 +134,10 @@ public class Main {
 
 //        Odczyt
 
-//        Path fileName = Path.of(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
-//        System.out.println(System.getProperty("user.dir"));
-//        String text = Files.readString(fileName);
-//        System.out.println(text);
+        Path fileName = Path.of(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
+        System.out.println(System.getProperty("user.dir"));
+        String text = Files.readString(fileName);
+        System.out.println(text);
 
 //         Zapis
 //        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
