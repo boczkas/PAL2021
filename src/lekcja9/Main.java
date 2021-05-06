@@ -31,8 +31,26 @@ public class Main {
 //    Czy wiesz jak działa odpalenie samochodu?
 
     public static void main(String[] args) throws InterruptedException {
-        Samochod stilo = new Samochod();
-        stilo.odpal();
+
+//        Arbuz fioletowyArbuz = new Arbuz();
+//        fioletowyArbuz.kolor = "fioletowy";
+//
+//        Kot mruczek = new Kot();
+//        mruczek.imie = "Mruczek";
+//        mruczek.wiek = 4;
+//
+//        mruczek.miaucz();
+//        mruczek.przedstawSie();
+//        mruczek.przywitajSie("Przemek");
+//        mruczek.skakaj();
+//        Samochod stilo = new Samochod();
+//        stilo.odpal();
+
+        Kino kino = new Kino();
+        kino.rezerwujMiejsce(1);
+
+//        1. Kino ma mieć 3 sale z miejscami
+//        2.
     }
 
 //    Hermetyzacja sprawia, że obiekty są dla nas czarną skrzynką
