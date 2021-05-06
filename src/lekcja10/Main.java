@@ -1,11 +1,18 @@
 package lekcja10;
 
-import lekcja9.Kino;
-
 public class Main {
     public static void main(String[] args) {
         Kino kino = new Kino();
         kino.rezerwujMiejsce(1);
+        kino.rezerwujMiejsce(1);
+//        kino.zwolnijMiejsce(1);
+//        kino.zwolnijMiejsce(2);
+        kino.rezerwujMiejsce(3);
+        kino.rezerwujMiejsce(4);
+//        kino.pokazStatusMiejsc();
+//        kino.zwolnijWszystkie();
+//        kino.pokazStatusMiejsc();
+//        1. Konstruktory
 
 //        Zadanie:
 //    kino.rezerwujMiejsce(1); - powinno zarezerwować pierwsze miejsce o ile jest dostępne.
