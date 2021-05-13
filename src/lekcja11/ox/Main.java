@@ -22,5 +22,5 @@ public class Main {
 
 
 //          Jak projektować klasę?
-//          Jak zapisywać relacje między klasami?
+//          Jak zapisywać interakcje między klasami?
 }
