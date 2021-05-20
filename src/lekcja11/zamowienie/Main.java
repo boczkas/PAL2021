@@ -33,6 +33,7 @@ public class Main {
         }
 
 
+        List<Integer> integerList;
 //      =============== JAK ZDĄŻYMY PO OX ================
 //        6. Używanie klas wbudowanych
 //        Przejdziemy przez pakiet Time
