@@ -1,6 +1,7 @@
 package lekcja12;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Obywatel {
 
@@ -19,6 +20,12 @@ public class Obywatel {
     public Obywatel(String name, int year, int month, int day, double pocketMoney) {
         this.name = name;
         this.dateOfBirth = LocalDate.of(year, month, day);
+        this.pocketMoney = pocketMoney;
+    }
+
+    public Obywatel(String name, LocalDate dateOfBirth, double pocketMoney) {
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
         this.pocketMoney = pocketMoney;
     }
 
@@ -51,10 +58,10 @@ public class Obywatel {
     }
 
     public void showPocketMoney() {
-        System.out.println(this.getName() + ": " + this.pocketMoney);
+        System.out.println(this.name + ": " + this.pocketMoney);
     }
 
-    public void increasePocketMoney(int amount) {
-        this.pocketMoney = this.pocketMoney + amount;
+    public void increasePocketMoney(int percentage) {
+        this.pocketMoney = this.pocketMoney + (this.pocketMoney * percentage) / 100;
     }
 }
