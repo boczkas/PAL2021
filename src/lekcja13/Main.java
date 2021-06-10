@@ -1,21 +1,25 @@
 package lekcja13;
 
 
+import lekcja13.dom.Osoba;
 import lekcja13.zwierzaki.SpiacyPies;
 import lekcja13.zwierzaki.SzkolonyPies;
 import lekcja13.zwierzaki.Pies;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 //        1. Pakiety - utworzyć zmienna typu LocalDate. Co oznacza ten import?
+        LocalDate localDate;
 //        2. Tworzenie pakietów.
 //        Pakiety tworzy się w celu organizacji pracy oraz uniknięcia konfliktów nazw. Jak u nas z Obywatelem.
 //        Popatrz na pierwszą linike w naszych klasach w poprzednich lekcjach. W szczególności na lekcję 9.
 //        Każda klasa może używać wszystkich klas (kiedyś o prywatnych) ze swojego pakietu oraz PUBLICZNYCH klas z pozostałych pakietów.
 
+        Osoba domowaOsoba = new Osoba();
 //        Obywatel obywatel = new Obywatel();
 
 //        Zadanie:
@@ -26,7 +30,7 @@ public class Main {
 //
 
 //        3. Importowanie statyczne
-//        double pow = Math.pow(2, 2);
+        double pow = Math.pow(2, 2);
 //        double pow = pow(2, 2);
 
 //        4. Modyfikatory dostępu.
@@ -35,6 +39,8 @@ public class Main {
 //        public vs package-private
 //        dołóżmy metodę i zróbmy private
 
+        Osoba osoba = new Osoba();
+        osoba.sayHello();
 //        5. Dziedziczenie
 
 //        Klasy mogą po sobie dziedziczyć. W Javie można dziedziczyć tylko po jednej klasie
@@ -43,6 +49,7 @@ public class Main {
 //        Utwórz konstruktor, który będzie przyjmował dodatkowy argument
 
         Pies pies = new Pies("Staszek", 45);
+
         SzkolonyPies szkolonyPies = new SzkolonyPies("Niezwkly", 100, "maluje");
 
         pies.sayHello();
@@ -55,16 +62,18 @@ public class Main {
 //        Dodać klasę SpiacyPies, który w hello() odpowiada, że nie ma siły gadać.
 //
         SpiacyPies spiacyPies = new SpiacyPies("Spiacy", 30);
-
-        List<Pies> mieszkancyWioski = new ArrayList<>();
-        mieszkancyWioski.add(pies);
-        mieszkancyWioski.add(szkolonyPies);
-        mieszkancyWioski.add(spiacyPies);
-
-        for (Pies mieszkaniec : mieszkancyWioski) {
-            mieszkaniec.sayHello();
-        }
-
+        spiacyPies.sayHello();
+        System.out.println(spiacyPies);
+//        List<Pies> mieszkancyWioski = new ArrayList<>();
+//        mieszkancyWioski.add(pies);
+//        mieszkancyWioski.add(szkolonyPies);
+//        mieszkancyWioski.add(spiacyPies);
+//
+//        System.out.println("------------------------");
+//        for (Pies mieszkaniec : mieszkancyWioski) {
+//            mieszkaniec.sayHello();
+//        }
+//
 
 //        Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
 //        Polimofizm oznacza, że możemy w miejsce klasy bazowej podstawić dowolny element z klasy dziedziczącej.

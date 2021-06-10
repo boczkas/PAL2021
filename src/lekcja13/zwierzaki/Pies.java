@@ -1,9 +1,8 @@
 package lekcja13.zwierzaki;
 
 public class Pies {
-    String name;
-    int age;
-
+    public String name;
+    public int age;
 
     public Pies(String name, int age) {
         this.name = name;

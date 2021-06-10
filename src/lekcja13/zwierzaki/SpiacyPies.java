@@ -9,4 +9,12 @@ public class SpiacyPies extends Pies {
     public void sayHello() {
         System.out.println("Nie chce mi sie z toba gadac.");
     }
+
+    @Override
+    public String toString() {
+        return "SpiacyPies{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
