@@ -79,30 +79,5 @@ public class Main {
 
         System.out.println(tomek.toString());
 
-
-//        ================== NA NASTEPNY RAZ ======================
-
-
-
-//        7. ArrayList - generyczna klasa z parametrem typu - co to oznacza? Możemy podać tutaj dowolny typ referencyjny
-//        ArrayList<Pracownik> pracownikLista = new ArrayList<>();
-//        Jaką to ma zaletę w stosunku do zwykłych list Pracownik[] pracownicy?
-//        Pracownik[] pracownikTablica = new Pracownik[2];
-//        pracownikTablica[0] = tomek;
-//        pracownikTablica[1] = marek;
-//        pracownikTablica[2] = tomek;
-//        Samo się rozszerza jak jest potrzeba
-
-//        pracownikLista.add(tomek);
-//        pracownikLista.add(marek);
-//        pracownikLista.add(tomek);
-//
-//        Deklaracja
-//        ArrayList<Pracownik> pracownicy = new ArrayList<Pracownik>();
-
-//        Java 11
-        var pracownikArrayList = new ArrayList<Pracownik>();
-
-//        Dodawanie do array vs dodawanie do arrayList
     }
 }
