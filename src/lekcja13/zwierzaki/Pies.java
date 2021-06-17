@@ -12,4 +12,5 @@ public class Pies {
     public void sayHello() {
         System.out.println("Siema jestem " + name + " i mam " + age + " lat.");
     }
+
 }

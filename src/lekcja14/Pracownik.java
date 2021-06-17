@@ -26,4 +26,25 @@ public class Pracownik {
     public String getImie() {
         return imie;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pracownik pracownik = (Pracownik) o;
+        return Double.compare(pracownik.wyplata, wyplata) == 0 && Objects.equals(imie, pracownik.imie);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(imie, wyplata);
+    }
+
+    @Override
+    public String toString() {
+        return "Pracownik{" +
+                "imie='" + imie + '\'' +
+                ", wyplata=" + wyplata +
+                '}';
+    }
 }
