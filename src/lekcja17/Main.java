@@ -2,6 +2,7 @@ package lekcja17;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -19,18 +20,24 @@ public class Main {
 //              -   klasa Pies implementująca Krzykacz
 //              -   klasa Trabka implementujaca Krzykacz
 //
-//        List<Krzykacz> krzykaczs = List.of(new Pies(), new Kot(), new Trabka(), new Pracownik("Ania", 100000));
+        List<Krzykacz> krzykaczs = List.of(new Pies(), new Kot(), new Trabka(),
+                new Pracownik("Ania", 100000));
 
-//        for(Krzykacz krzykacz : krzykaczs) {
-//            krzykacz.wydajDzwiek();
-//        }
-//
-//        Krzykacz krzykacz = new Krzykacz() {
-//            @Override
-//            public void wydajDzwiek() {
-//                System.out.println("Krzycz!");
-//            }
-//        };
+        for(Krzykacz krzykacz : krzykaczs) {
+            krzykacz.wydajDzwiek();
+        }
+
+        Krzykacz krzykacz = new Krzykacz() {
+            @Override
+            public void wydajDzwiek() {
+                System.out.println("Krzycz!");
+            }
+        };
+
+        Krzykacz krzykacz1 = new Pracownik("lala", 10);
+
+
+
 //        W interfejsach możemy mieć pola, ale są to tak naprawdę stałe, bo są one public static final
 //        Nie możemy tworzyć instancji interfejsu.
 
@@ -43,16 +50,16 @@ public class Main {
         Pracownik barylek = new Pracownik("Baryłek", 20000);
 //
         Pracownik[] pracownicy = {nikoletta, ania, przemek, barylek};
-//
-//        for(var pracownik : pracownicy) {
-//            System.out.println(pracownik);
-//        }
-//
+
+        for(Krzykacz krzykacz2 : pracownicy) {
+            System.out.println(krzykacz2);
+        }
+
         Arrays.sort(pracownicy);
-//        System.out.println("============================");
-//        for(var pracownik : pracownicy) {
-//            System.out.println(pracownik);
-//        }
+        System.out.println("============================");
+        for(var pracownik : pracownicy) {
+            System.out.println(pracownik);
+        }
 
 //        Można implementować kilka interfejsów. Niech Pracownik implementuje Krzykacza
 
@@ -73,5 +80,7 @@ public class Main {
 //        Metody domyślne interfejsów.
 
 //        2. Co się stanie gdy dwa interfejsy mają tą samą metodę domyślną?
+
+        List<String> stringList = new LinkedList<>();
     }
 }

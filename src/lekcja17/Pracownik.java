@@ -22,10 +22,10 @@ public class Pracownik implements Comparable<Pracownik>, Krzykacz, Wulgarnik {
                 '}';
     }
 
-    @Override
-    public int compareTo(Pracownik o) {
-        return Double.compare(this.wyplata, o.wyplata);
-    }
+//    @Override
+//    public int compareTo(Pracownik o) {
+//        return Double.compare(this.wyplata, o.wyplata);
+//    }
 
     @Override
     public void wydajDzwiek() {
@@ -33,8 +33,17 @@ public class Pracownik implements Comparable<Pracownik>, Krzykacz, Wulgarnik {
     }
 
     @Override
-    public void nakrzycz(Krzykacz krzykacz) {
-        System.out.println("Krzycze! !");
+    public int compareTo(Pracownik o) {
+        return Double.compare(this.wyplata, o.wyplata);
     }
 
+    @Override
+    public void nakrzycz(Wulgarnik wulgarnik) {
+        System.out.println("Krzycze na " + wulgarnik);
+    }
+
+    @Override
+    public void krzycz() {
+
+    }
 }
