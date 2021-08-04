@@ -1,4 +1,4 @@
-package lekcja18;
+package lekcja19;
 
 import lekcja17.Krzykacz;
 import lekcja17.Wulgarnik;

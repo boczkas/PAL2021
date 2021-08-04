@@ -6,6 +6,17 @@ import java.util.Comparator;
 public class Main {
     public static void main(String[] args) {
 
+//        Strategia
+
+        Kaczka kaczka = new PrawdziwaKaczka();
+        String zKlawiatury = "na polowanie";
+
+        System.out.println("Idziesz posluchac spiewu, czy postrezlac?");
+        if(zKlawiatury.equals("na polowanie")) {
+            kaczka = new PrzynetaNaPolowaniaKaczka();
+        }
+
+
 //        Mamy to co ostatnio
         Pracownik nikoletta = new Pracownik("Nikoletta", 0);
         Pracownik ania = new Pracownik("Ania", 1000000);
@@ -53,7 +64,13 @@ public class Main {
         }
 
 //        Popatrzmy sobie, że w obu przypadkach coś nam się świeci na szaro. Skopiowany Comparator imienia:
-        Comparator<Pracownik> comparatorImienia2 = (o1, o2) -> o1.imie.length() - o2.imie.length();
+        Comparator<Pracownik> comparatorImienia2 = new Comparator<Pracownik>() {
+            @Override
+            public int compare(Pracownik o1, Pracownik o2) {
+                return  o1.imie.length() - o2.imie.length();
+            }
+        };
+
 //
         System.out.println("========================");
         Arrays.sort(pracownicy, comparatorImienia2);
@@ -94,8 +111,8 @@ public class Main {
         nakrzykiwacz(polskiKrzykacz);
         nakrzykiwacz(angielskiKrzykacz);
         nakrzykiwacz(wielokrotnyKrzykacz);
-
-//        Ania dorób krzykacza opierdzialającego za nie umyte gary
+//
+//        Dorób krzykacza opierdzialającego za nie umyte gary
 
 
 //        Mamy nowy interfejs Manager do krzyczenia na Pracownika
@@ -103,12 +120,15 @@ public class Main {
 
         Manager milyManager = pracownik -> System.out.println("Prosiłbym o oddalenie się Panie/Pani " + pracownik.imie);
         Manager niemilyManager = pracownik -> System.out.println("Wydupcaj Panie/Pani " + pracownik.imie);
-
+//
         milyManager.przekazInformacje(przemek);
         niemilyManager.przekazInformacje(barylek);
 //     Pousuwajmy typy, bo nie potrzebne z tego względu, że kompilator jest je sobie w stanie wydedukować
 
-//        Ania dorób Managera informującego o podwyżce
+//        Dorób Managera informującego o podwyżce
+        PracownikMiesiaca pracownikMiesiaca = new PracownikMiesiaca("aa", 400000);
+        milyManager.przekazInformacje(pracownikMiesiaca);
+
     }
 
     public static void nakrzykiwacz(Krzykacz krzykacz) {
