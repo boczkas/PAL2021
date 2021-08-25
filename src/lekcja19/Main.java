@@ -1,6 +1,6 @@
 package lekcja19;
 
-import java.util.Comparator;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,7 +40,54 @@ public class Main {
 //        https://kobietydokodu.pl/wp-content/uploads/2016/05/wyjatki-w-javie.001.jpeg
 
 //        Jak stworzyć własny wyjątek? Checked? Unchecked?
-        throw new Wyjatek();
+//        throw new Wyjatek();
+
+//        =================================
+//        =================================
+//        =================================
+
+//        SZYBKI KURS BRAKUJACYCH RZECZY
+
+//        Kolekcje
+//          1. Listy
+        List<String> stringList = new ArrayList<>();
+        stringList.add("a");
+        stringList.add("b");
+        System.out.println("stringList size: " + stringList.size());
+        stringList.get(0);
+        stringList.remove(0);
+
+        stringList = new LinkedList<>();
+
+
+//        2. Set
+        Set<String> stringSet = new HashSet<>();
+        stringSet.add("a");
+        stringSet.add("a");
+        System.out.println(stringSet.size());
+        stringSet.contains("a"); // nie ma 'get', bo nie ma indeksów
+
+        stringSet = new TreeSet<>();
+
+//        3. Map
+        Map<String, Integer> stringIntegerMap = new HashMap<>();
+        stringIntegerMap.put("a", 2);
+        stringIntegerMap.put("b", 3);
+        stringIntegerMap.put("a", 5);
+        System.out.println(stringIntegerMap.size());
+        stringIntegerMap.get("a");
+
+        stringIntegerMap = new TreeMap<>();
+
+
+
+//        SOLID
+//        S - Single Responsibility Principle
+//        O - Open/Closed Principle
+//        L - Liskov Principle
+//        I - Interface Segregation Principle
+//        D - Dependency Inversion Principle
+
     }
 
 
