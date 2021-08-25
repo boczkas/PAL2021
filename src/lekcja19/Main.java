@@ -88,6 +88,7 @@ public class Main {
 //        I - Interface Segregation Principle
 //        D - Dependency Inversion Principle
 
+//        https://www.dotnettricks.com/learn/designpatterns/different-types-of-software-design-principles
     }
 
 
