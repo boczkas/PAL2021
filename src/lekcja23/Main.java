@@ -11,11 +11,11 @@ public class Main {
   public static void main(String[] args) throws Wyjatek1 {
     //    1. Rethrow exception
 
-    //      try {
-    //          throw new Wyjatek2();
-    //      } catch (Wyjatek2 wyjatek2) {
-    //          throw new Wyjatek1();
-    //      }
+//          try {
+//              throw new Wyjatek2();
+//          } catch (Wyjatek2 wyjatek2) {
+//              throw new Wyjatek1();
+//          }
 
     //  2. Logger - w książce jest dużo niuansów, my się skupimy na podstawach
 
@@ -56,14 +56,14 @@ public class Main {
       doubleTypesPair.second = 8;
 
 //     - Metoda generyczna
-//      String[] strings = {"a", "b", "c"};
-//      String middleString = getMiddle(strings);
-//      System.out.println(middleString);
-//
-//      Integer[] integers = {1, 2, 3};
-//      Integer middleInteger = getMiddle(integers);
-//
-//    System.out.println(middleInteger);
+      String[] strings = {"a", "b", "c"};
+      String middleString = getMiddle(strings);
+      System.out.println(middleString);
+
+      Integer[] integers = {1, 2, 3};
+      Integer middleInteger = getMiddle(integers);
+
+    System.out.println(middleInteger);
   }
 
     //      - Metoda generyczna
