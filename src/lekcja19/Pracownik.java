@@ -3,6 +3,8 @@ package lekcja19;
 import lekcja17.Krzykacz;
 import lekcja17.Wulgarnik;
 
+import java.util.Objects;
+
 public class Pracownik implements Comparable<Pracownik>, Krzykacz, Wulgarnik {
     String imie;
     double wyplata;
@@ -48,5 +50,22 @@ public class Pracownik implements Comparable<Pracownik>, Krzykacz, Wulgarnik {
     @Override
     public void krzycz() {
 
+    }
+
+    public String getImie() {
+        return imie;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pracownik pracownik = (Pracownik) o;
+        return Double.compare(pracownik.wyplata, wyplata) == 0 && Objects.equals(imie, pracownik.imie);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(imie, wyplata);
     }
 }
