@@ -107,7 +107,6 @@ public class Main {
       Set<String> set = new HashSet<>();
 
       Map<String, Integer> stringIntegerMap = new TreeMap<>();
-
     System.out.println("===============================");
     stringIntegerMap.put("1", 1);
     stringIntegerMap.put("21", 21);
@@ -119,5 +118,7 @@ public class Main {
     for (Integer liczba : stringIntegerMap.values()) {
       System.out.println(liczba);
     }
+
+    Set<String> stringSet = new LinkedHashSet<>();
   }
 }

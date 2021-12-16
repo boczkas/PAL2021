@@ -5,7 +5,7 @@ import java.time.Instant;
 
 public class Main {
   //    1. Wątek a proces?
-  //      Proces może iec wiele wątków. Wątki współdzielą zestaw zmiennych. Wada - mogą sobie
+  //      Proces może wiele wątków. Wątki współdzielą zestaw zmiennych. Wada - mogą sobie
   // wchodzić w paradę.
   //      Zaleta - mogą się szybciej między sobą komunikować.
 
@@ -20,26 +20,26 @@ public class Main {
 //    NAJPIERW JEDEN
 
 
-//    Sleeper spioch1 = new Sleeper("1");
-//    Sleeper spioch2 = new Sleeper("2");
-//    Sleeper spioch3 = new Sleeper("3");
-//    Sleeper spioch4 = new Sleeper("4");
+    Sleeper spioch1 = new Sleeper("1");
+    Sleeper spioch2 = new Sleeper("2");
+    Sleeper spioch3 = new Sleeper("3");
+    Sleeper spioch4 = new Sleeper("4");
 
 //    Uruchomienie przez run()
-//    spioch1.run();
-//    spioch2.run();
-//    spioch3.run();
-//    spioch4.run();
+    spioch1.run();
+    spioch2.run();
+    spioch3.run();
+    spioch4.run();
 
 //    Uruchomienie przez
-//    Thread th1 = new Thread(spioch1);
-//    Thread th2 = new Thread(spioch2);
-//    Thread th3 = new Thread(spioch3);
-//    Thread th4 = new Thread(spioch4);
-//
-//    th1.start();
-//    th2.start();
-//    th3.start();
-//    th4.start();
+    Thread th1 = new Thread(spioch1);
+    Thread th2 = new Thread(spioch2);
+    Thread th3 = new Thread(spioch3);
+    Thread th4 = new Thread(spioch4);
+
+    th1.start();
+    th2.start();
+    th3.start();
+    th4.start();
   }
 }
