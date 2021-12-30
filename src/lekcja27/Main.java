@@ -36,7 +36,7 @@ public class Main {
     Thread th2 = new Thread(spioch2);
     Thread th3 = new Thread(spioch3);
     Thread th4 = new Thread(spioch4);
-
+//
     th1.start();
     th2.start();
     th3.start();

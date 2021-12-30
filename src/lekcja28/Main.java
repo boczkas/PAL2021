@@ -1,6 +1,7 @@
 package lekcja28;
 
 import java.util.Map;
+import java.util.Scanner;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -23,7 +24,7 @@ public class Main {
 //          Thread thread = new Thread(r);
 //          thread.start();
 //      }
-
+//
 //      System.out.println(Thread.currentThread().getName() + ": " + counter.getCounter());
 //      2. Race condition check-and-act
 //          http://tutorials.jenkov.com/java-concurrency/race-conditions-and-critical-sections.html
@@ -36,7 +37,7 @@ public class Main {
 //            public void run() {
 //              Map<String, String> map = sharedMap.getSharedMap();
 //              if (map.containsKey("key")) {
-////                System.out.println("Some delay");
+//                System.out.println("Some delay");
 //                  String value = map.remove("key");
 //                if (value == null) {
 //                  System.out.println("No mapping was present");
@@ -54,7 +55,7 @@ public class Main {
 //      3. Fix counter by synchronized method, block
 //      4. Fix counter by lock
 
-    Counter2 counter2 = new Counter2();
+//    Counter2 counter2 = new Counter2();
 //    for (int i = 0; i < 1000; i++) {
 //      Runnable r =
 //          new Runnable() {
