@@ -6,4 +6,11 @@ public class Kon {
     public Kon(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Kon{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

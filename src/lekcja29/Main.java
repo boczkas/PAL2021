@@ -16,7 +16,8 @@ public class Main {
                 element -> {
                   System.out.println("ELO!");
                   return element.contains("b");
-                });
+                })
+            ;
 
 //    Ile razy wypisze nam się "ELO!" ?
 //      A dlaczego? A no dlatego, że nie ma operacji terminalnej.
@@ -25,6 +26,7 @@ public class Main {
 //      A teraz?
 
       long count = b.count();
+    System.out.println(count);
 
 //      Każdy stream może mieć wiele operacji pośrednich i jedną terminalną
 
@@ -46,14 +48,20 @@ public class Main {
 //      90% rzeczy się tak robi
 
 //      Dlatego tutaj sobie zrobimy przerwę i parę zadań dla Was
-      List<Kon> konie = List.of(new Kon("Staszek"), new Kon("Zbyszek"), new Kon("Baska"));
+//      List<Kon> konie = List.of(new Kon("Staszek"), new Kon("Zbyszek"), new Kon("Baska"));
 
-//      Stwórz listę koni, które posiadają literę "a" w nazwie
 
       List<String> imiona = List.of("Franek", "Andrzej", "Plotka");
 
     //      Stwórz listę koni na podstawie podanych imion
 
+    List<Kon> konie = imiona.stream()
+            .filter(imie -> imie.contains("e"))
+            .map(Kon::new)
+            .collect(Collectors.toList());
+    for(var kon : konie) {
+      System.out.println(kon);
+    }
     //      Stwórz listę koni na podstawie podanych imion, użyj jedynie imion zawierających literę
     // "e"
 
@@ -66,12 +74,15 @@ public class Main {
             List.of("dddd", "eee", "ffff"),
             List.of("gggg", "hhh", "iiii"));
 
-      List<String> strings = listOfLists.stream().flatMap(Collection::stream).collect(Collectors.toList());
-      printList(strings);
+      List<String> strings = listOfLists.stream().flatMap(Collection::stream)
+              .collect(Collectors.toList());
+//      printList(strings);
 
 //    Teraz Wy!
 //      Stwórz listę koni na podstawie listOfLists
 //      Używając metody count (terminalnej) policz ile String'ów jest krótsza niż 4 w listOfLists
+//      Stwórz listę koni na podstawie listOfLists których imie jest krótsze niż 4.
+//        Konie mają być przechowywane w kolejności imion odwrotnej do alfabetycznej.
   }
 
   private static void printList(List<String> list) {
