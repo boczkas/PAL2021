@@ -10,24 +10,24 @@ public class Main {
 //    break;
 //    continue;
 
-//        int i = 0;
+        int i = 0;
+
+        while (i < 10) {
+            i++;
+            if (i % 2 == 0) {
+                continue;
+            }
+            System.out.println("i = " + i);
+        }
 //
-//        while (i < 10) {
-//            i++;
-//            if (i % 2 == 0) {
-//                continue;
-//            }
-//            System.out.println("i = " + i);
-//        }
-//
-//        System.out.println("=========================");
-//
-//        int j = 0;
-//        while (j < 10) {
-//            if (j == 7) break;
-//            j++;
-//            System.out.println("j = " + j);
-//        }
+        System.out.println("=========================");
+
+        int j = 0;
+        while (j < 10) {
+            if (j == 7) break;
+            j++;
+            System.out.println("j = " + j);
+        }
 
         Random random = new Random();
         int wylosowana = random.nextInt(100);

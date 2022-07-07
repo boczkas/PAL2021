@@ -19,12 +19,11 @@ public class Main {
 //              <typ> <nazwa> = <wartość>;
 //              int liczba = 5;
 //              String tekst = "Imie";
-
 //        Stwórzmy zmienną typu całkowitego i nadajmy jej wartość 10.
 //        Wypiszmy ją na ekran.
 //        Stwórzmy zmienną do przechowywania tekstu. Wpisz do niej swoje imię.
 //        Wypiszmy ją na ekran.
-
+//        System.out.println(liczba + tekst);
 
 
 // ============================ TYPY DANYCH DLA LICZB =======================
@@ -41,13 +40,13 @@ public class Main {
 // float 4 bytes 7 decimal digits
 // double 8 bytes 16 decimal digits
 
-//        int liczba = 4;
-//        System.out.println(liczba);
-//        byte bajcik = 1;
-//        int intigerek = 1;
-//
-//        System.out.println(bajcik);
-//        System.out.println(intigerek);
+        int liczba = 4;
+        System.out.println(liczba);
+        byte bajcik = 1;
+        int intigerek = 1;
+
+        System.out.println(bajcik);
+        System.out.println(intigerek);
 
 //        bajcik = 129;
 //        intigerek = 129;
@@ -66,9 +65,9 @@ public class Main {
 
         System.out.println(2 - 1.1);
 
-        int dzien = 18;
-        String miesiac = "luty";
-        int rok = 2021;
+        int dzien = 31;
+        String miesiac = "maja";
+        int rok = 2022;
 
         System.out.println("Dzisiaj jest " + dzien + " " + miesiac + " " + rok);
 

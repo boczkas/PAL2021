@@ -37,7 +37,7 @@ public class Main {
 //    try with resources
       BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/src/lekcja22/plik.txt"));
       try {
-      System.out.println(br.readLine());
+        System.out.println(br.readLine());
       } catch (IOException e) {
           e.printStackTrace();
       } finally {

@@ -6,45 +6,45 @@ public class Main {
     public static void main(String[] args) {
 //          1. Konwersja typów numerycznych
 
-//        int liczbaInt = 5;
-//        double liczbaDouble = liczbaInt;
-
-//        System.out.println(liczbaInt);
-//        System.out.println(liczbaDouble);
+        int liczbaInt = 5;
+        double liczbaDouble = liczbaInt;
+//
+        System.out.println(liczbaInt);
+        System.out.println(liczbaDouble);
 
 
 //          2. Rzutowanie (konwersja stratna)
 
-//        liczbaDouble = 3.999;
+        liczbaDouble = 3.999;
 //        liczbaInt = liczbaDouble;
-//
-//        liczbaInt = (int) liczbaDouble;
-//        System.out.println(liczbaInt);
-//
-//        liczbaInt = 300;
-//        byte liczbaByte = (byte) liczbaInt;
-//
-//        System.out.println(liczbaByte);
+
+        liczbaInt = (int) liczbaDouble;
+        System.out.println(liczbaInt);
+
+        liczbaInt = 300;
+        byte liczbaByte = (byte) liczbaInt;
+
+        System.out.println(liczbaByte);
 
 
 //          3. Operatory z przypisaniem
 
-//        int x = 0;
-//
-//        x = x + 5;
-//        System.out.println(x);
-//
-//        x += 1;
-//        System.out.println(x);
-//
-//        x *= 2;
-//        System.out.println(x);
+        int x = 0;
+
+        x = x + 5;
+        System.out.println(x);
+
+        x += 1;
+        System.out.println(x);
+
+        x *= 2;
+        System.out.println(x);
 
 
 //          4. Operatory inkrementacji i dekrementacji
 //
 //        int i = 0;
-//
+
 //         postinkrementacji
 //        i++;
 //        System.out.println(i);
@@ -57,16 +57,16 @@ public class Main {
 //        ++i;
 //        System.out.println(i);
 //
-//         postdekrementacji
+//         predekrementacji
 //        --i;
 //        System.out.println(i);
 //
 //        int m = 7;
 //        int n = 7;
-//
+
 //        int a = 2 * ++m;
 //        int b = 2 * n++;
-//
+
 //        System.out.println("m = " + m);
 //        System.out.println("n = " + n);
 //        System.out.println("a = " + a);
@@ -90,11 +90,11 @@ public class Main {
 //        while(<warunek_prawdziwy>) {
 //            Rob cos
 //        }
-//        int i = 5;
-//        while (i < 15) {
-//            System.out.println("i = " + i);
-//            i++;
-//        }
+        int i = 5;
+        while (i < 15) {
+            System.out.println("i = " + i);
+            i++;
+        }
 //        Wypisz liczby od 10 do 0;
 
 //        7. Pętla for()
