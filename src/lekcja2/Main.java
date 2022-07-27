@@ -3,13 +3,13 @@ package lekcja2;
 public class Main {
     public static void main(String[] args) {
 //        1. char - pojedynczy znak - z tego składają się Stringi
-//        char znak = 'a';
-//        System.out.println(znak);
+        char znak = 'a';
+        System.out.println(znak);
 //        2. boolean - prawda/fałsz
-//        boolean logika = true;
-//        logika = false;
-//
-//        System.out.println(logika);
+        boolean logika = true;
+        logika = false;
+
+        System.out.println(logika);
 //        3. Co to są te // ?
 //        Komentarze w kodzie - nie są w żaden sposób interpretowane.
 
@@ -53,6 +53,7 @@ public class Main {
         System.out.println("Twoje imie to " + IMIE);
 
 //        IMIE = "Staszek";
+//        System.out.println(IMIE);
 
 //        6. Operatory: +, -, *, / , %
         System.out.println("1 + 2 = " + (1 + 2));
@@ -61,23 +62,24 @@ public class Main {
         System.out.println("9 / 3 = " + (9 / 3));
         System.out.println("5 % 2 = " + (5 % 2));
 
-//        7. Napiszmy program liczący pole prostokąta. Zadeklaruj zmienne a,b, rezultat
+//        7. Napiszmy program liczący pole prostokąta.
+//        Zadeklaruj zmienne a,b, rezultat
 
         int a = 2;
         int b = 7;
 
-        int pole = a *b;
+        int pole = a * b;
 
         System.out.println("Pole prostokąta o boku " + a + " i " + b + " to: " + pole);
-
+//
         double bokA = 1.5;
         double wysokosc = 3.5;
 
         double poleTrojkata = 0.5 * bokA * wysokosc;
 
         System.out.println(poleTrojkata);
-
-        double promien = 5;
-double poleKola = Math.PI * promien * promien;
+//
+//        double promien = 5;
+//double poleKola = Math.PI * promien * promien;
     }
 }

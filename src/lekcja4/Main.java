@@ -1,9 +1,6 @@
 package lekcja4;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.TreeMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,11 +44,11 @@ public class Main {
 //          4. Operatory inkrementacji i dekrementacji
 //
 //        int i = 0;
-
+//
 //         postinkrementacji
 //        i++;
 //        System.out.println(i);
-
+//
 //         postdekrementacji
 //        i--;
 //        System.out.println(i);
@@ -60,16 +57,16 @@ public class Main {
 //        ++i;
 //        System.out.println(i);
 //
-//         postdekrementacji
+//         predekrementacji
 //        --i;
 //        System.out.println(i);
 //
 //        int m = 7;
 //        int n = 7;
-//
+
 //        int a = 2 * ++m;
 //        int b = 2 * n++;
-//
+
 //        System.out.println("m = " + m);
 //        System.out.println("n = " + n);
 //        System.out.println("a = " + a);

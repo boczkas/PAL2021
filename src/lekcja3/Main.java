@@ -1,7 +1,5 @@
 package lekcja3;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -42,7 +40,7 @@ public class Main {
 //            System.out.println("True");
 //        }
 //        else if (liczba1 == liczba2) {
-//            System.out.println("Tu nie bedziemy");
+//            System.out.println("Rowno");
 //        }
 //        else {
 //            System.out.println("False");
