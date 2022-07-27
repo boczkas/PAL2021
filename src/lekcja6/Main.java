@@ -6,12 +6,26 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int kubekStary = 9;
-        int kubekPies = 8;
+        int kubekStary = 4;
+        int kubekWKropki = 5;
 
-//        porownywaczka(kubekStary, kubekPies);
-//        Math.pow(2, 2);
-//        porownywaczka2(kubekStary, kubekPies);
+        if (kubekStary > kubekWKropki) {
+            System.out.println("W pierwszym było więcej");
+        } else {
+            System.out.println("W pierwszym było mniej albo tyle samo");
+        }
+
+
+        int garnek = 1;
+        int patelnia = 2;
+        if (garnek > patelnia) {
+            System.out.println("W pierwszym było więcej");
+        } else {
+            System.out.println("W pierwszym było mniej albo tyle samo");
+        }
+
+        porownywaczka(kubekStary, kubekWKropki);
+        porownywaczka(garnek, patelnia);
 
         wypisywaczka("lubie placki", "i koty");
 
@@ -19,8 +33,10 @@ public class Main {
         String kubek2 = "i koty";
         wypisywaczka(kubek1, kubek2);
         poleKwadratu(5);
+        Math.pow(2, 2);
     }
 
+    // <modyfikator_dostepu> <static - nie koniecznie> <typ_zwracany> nazwa(<parametry>)
     private static void poleKwadratu(int bok) {
         System.out.println(bok * bok);
     }
@@ -29,19 +45,11 @@ public class Main {
         System.out.println(tekst + " " + tekst2);
     }
 
-    public static void porownywaczka2(int garnek, int patelnia) {
-        if (garnek > patelnia) {
-            System.out.println(garnek);
+    public static void porownywaczka(int pierwsze, int drugie) {
+        if (pierwsze > drugie) {
+            System.out.println("W pierwszym było więcej");
         } else {
-            System.out.println(patelnia);
-        }
-    }
-
-    public static void porownywaczka(int garnek, int patelnia) {
-        if (garnek > patelnia) {
-            System.out.println("W garnku było więcej");
-        } else {
-            System.out.println("W garnku było mniej albo tyle samo");
+            System.out.println("W pierwszym było mniej albo tyle samo");
         }
     }
 
@@ -50,7 +58,7 @@ public class Main {
 //      Tymi kawałkami są metody.
 
 //    2. Co to jest metoda?
-//      Jest to wyodrębniony kawałek kodu który wykonyje jakąś funkcjonalność
+//      Jest to wyodrębniony kawałek kodu który wykonuje jakąś funkcjonalność
 //    Pokazówka - które większe?
 //    Pokazówka - suma
 
@@ -64,6 +72,5 @@ public class Main {
 
 //    8. Czasami chcemy żeby nasza metoda coś przyjęła dokonała obliczeń i to zwróciła
 //      Słowo return w metodzie
-//      Pokazówka jak starczy czasu
 
 }

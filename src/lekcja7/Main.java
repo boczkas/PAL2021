@@ -10,8 +10,8 @@ public class Main {
 //          -* Dla ambitnych: napisz metodę sprawdzającą, czy dana liczba należy do ciągu Fibonacciego
 
 
-        System.out.println(poleKwadratu(5));
-        System.out.println(porownywaczka(10, 5));
+//        System.out.println(poleKwadratu(5));
+//        System.out.println(porownywaczka(10, 5));
 
 //        2. Tablice
 //          Potrzebujemy przechowywać sobie 5 liczb - 5 zmiennych, 100 liczb - 100 zmiennych. No trochę niewygodne.
@@ -44,8 +44,8 @@ public class Main {
 //        forEach
 
 
-        int[] liczby2 = {5,6,1,2,90};
-        System.out.println(znajdzNajmniejsza(liczby2));
+//        int[] liczby2 = {5,6,1,2,90};
+//        System.out.println(znajdzNajmniejsza(liczby2));
     }
 
     private static int poleKwadratu(int bok) {

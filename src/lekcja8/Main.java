@@ -47,7 +47,7 @@ public class Main {
 
 
 //        3. Łańcuchy - String
-//        String powitanie = "Cześć";
+//        String powitanie = "Czesc";
 //        System.out.println(powitanie);
 
 //        wyciąganie kawałka
@@ -63,18 +63,18 @@ public class Main {
 //
 //        składanie stringa z nieStringiem
 //        int wiek = 18;
-//        String ania = "Ania";
+//        String ania = "Ala";
 //
 //        System.out.println(ania + " ma " + wiek + " lat ");
 
 //        Znaki specjalne
-//        System.out.println("Jej mąż nazywany był \"Baryłem\"");
-//        System.out.println("\tLubił platformy \nale bardziej grać w gry");
+//        System.out.println("Ala ma kota \"Mruczka\"");
+//        System.out.println("\tLubi myszy \nale bardziej spac");
 
 //          Pusty łańcuch
 
 
-//        String pusty = " ";
+//        String pusty = "";
 //
 //        System.out.println(pusty.length() == 0);
 //        System.out.println(pusty.isEmpty());
@@ -135,14 +135,16 @@ public class Main {
 //        Odczyt
 
         Path fileName = Path.of(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
+
+        // A co to to getProperty?
         System.out.println(System.getProperty("user.dir"));
         String text = Files.readString(fileName);
         System.out.println(text);
 
 //         Zapis
-//        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
-//        fileWriter.append("Cześć Nikoletta!");
-//        fileWriter.close();
+        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
+        fileWriter.append("Witaj Swiecie!");
+        fileWriter.close();
 //
 //        String milo = "Bardzo miło z Panią pracować!";
 //        Files.write(Path.of("src/lekcja5/test.txt"), milo.getBytes(), StandardOpenOption.APPEND);
