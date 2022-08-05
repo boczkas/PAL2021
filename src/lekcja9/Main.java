@@ -32,6 +32,11 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
+        Dom hata = new Dom();
+        hata.otworzLodowke();
+
+
+
 //        Arbuz fioletowyArbuz = new Arbuz();
 //        fioletowyArbuz.kolor = "fioletowy";
 //
@@ -43,11 +48,12 @@ public class Main {
 //        mruczek.przedstawSie();
 //        mruczek.przywitajSie("Przemek");
 //        mruczek.skakaj();
+
 //        Samochod stilo = new Samochod();
 //        stilo.odpal();
 
-        Kino kino = new Kino();
-        kino.rezerwujMiejsce(1);
+//        Kino kino = new Kino();
+//        kino.rezerwujMiejsce(1);
 
 //        1. Kino ma mieć 3 sale z miejscami
 //        2.

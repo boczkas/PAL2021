@@ -22,11 +22,11 @@ public class Main {
 
 //    - cachable - dość dziwna threadPoola. Startuje bez żadnego wątku i tworzy nowy dla każdego
 //          przychodzącego zadania. Wywala thready, które są Idle przez 1min
-//      ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
+      ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
 //      cachedThreadPool.submit(() -> System.out.println("aaa"));
 
 //      - workStealingPool - jej działanie wytłumaczę później w czasie forkJoinPool
-//      ExecutorService workStealingPool = Executors.newWorkStealingPool();
+      ExecutorService workStealingPool = Executors.newWorkStealingPool();
 
 //      Mamy tu sporo różnych metod fabrycznych - objaśnić ten design pattern
 

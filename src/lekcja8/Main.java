@@ -1,9 +1,11 @@
 package lekcja8;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -82,7 +84,7 @@ public class Main {
 //        2. charAt
 //        String witaj = "elo";
 //        System.out.println(witaj);
-
+//
 //        char znak = witaj.charAt(0);
 //        System.out.println(znak);
 
@@ -96,8 +98,9 @@ public class Main {
 //        }
 
 
-        String tekst1 = "Ala ma kota\n, a kot ma ale\n a pies ma kota";
-
+//        String tekst1 = "Ala ma kota\n, a kot ma ale\n a pies ma kota";
+//
+//        System.out.println(tekst1);
 //      Policz ile linii ma ten String
 //      Policz ile razy występuje w tym String'u słowo "ma"
 //        int licznikLinii = 0;
@@ -118,12 +121,12 @@ public class Main {
 //
 //
 
-        String[] split = tekst1.split("\n");
-        System.out.println(split.length);
+//        String[] split = tekst1.split("\n");
+//        System.out.println(split.length);
 //        4. Wejście/wyjście I/O
 
 //      Wyjście
-        System.out.println("No elo");
+//        System.out.println("No elo");
 
 //      Wejście
 //        Scanner in = new Scanner(System.in);
@@ -134,19 +137,27 @@ public class Main {
 
 //        Odczyt
 
-        Path fileName = Path.of(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
+        File file = new File(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
+        Scanner scanner = new Scanner(file);
 
+        while (scanner.hasNextLine()) {
+            System.out.println(scanner.nextLine());
+        }
+
+        System.out.println("=================");
         // A co to to getProperty?
+        Path fileName = Path.of(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
+        System.out.println("System.getProperty");
         System.out.println(System.getProperty("user.dir"));
         String text = Files.readString(fileName);
         System.out.println(text);
 
 //         Zapis
-        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
-        fileWriter.append("Witaj Swiecie!");
-        fileWriter.close();
+//        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
+//        fileWriter.append("Witaj Swiecie!");
+//        fileWriter.close();
 //
-//        String milo = "Bardzo miło z Panią pracować!";
+//        String milo = "Bardzo miło z Panstwem pracować!";
 //        Files.write(Path.of("src/lekcja5/test.txt"), milo.getBytes(), StandardOpenOption.APPEND);
     }
 }
