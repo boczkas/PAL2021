@@ -2,35 +2,24 @@ package lekcja10;
 
 public class Main {
     public static void main(String[] args) {
-        Kino kino = new Kino();
-        kino.rezerwujMiejsce(1);
-        kino.rezerwujMiejsce(1);
-//        kino.zwolnijMiejsce(1);
-//        kino.zwolnijMiejsce(2);
-        kino.rezerwujMiejsce(3);
-        kino.rezerwujMiejsce(4);
-//        kino.pokazStatusMiejsc();
-//        kino.zwolnijWszystkie();
-//        kino.pokazStatusMiejsc();
-//        1. Konstruktory
+        //        1. Konstruktory
+        Auto auto = new Auto();
+        auto.marka = "Fiat";
+        auto.poziomPaliwa = 100;
 
-//        Zadanie:
-//    kino.rezerwujMiejsce(1); - powinno zarezerwować pierwsze miejsce o ile jest dostępne.
-//    kino.zwolnijMiejsce(1); - powinno zwolnić pierwsze miejsce o ile było zajęte.
-//    kino.pokazStatusMiejsc() - powinno wypisać status wszystkich miejsc.
-//    kino.zwolnijWszystkie() - powinno zwolnić wszystkie miejsca
+//        Chcielibyśmy żeby te rzeczy nadawać przy tworzeniu obiektu
 
+//        Stwórz klasę Pies z polami imie i wiek, zainicjalizuj je przez konstruktor
 
-//        1. Kino ma mieć 3 sale z 5 miejscami
-//              - kino.rezerwujMiejsce(1); - powinno zarezerwować pierwsze miejsce na dowolnej sali, o ile jest dostępne.
-//              - kino.zwolnijMiejsce(1, 2); - powinno zwolnić drugie miejsce na pierwszej sali, o ile było zajęte.
-//              - kino.pokazStatusMiejsc() - powinno wypisać status wszystkich miejsc ze wszystkich sal uwzględniając numer sali.
-//              - kino.zwolnijWszystkie(1) - powinno zwolnić wszystkie miejsca na pierwszej sali
-//        2. Na każdej z sal ma być wyświetlany inny Film (też klasa)
-//        3. kino.rezerwujMiejsceNaFilm("Matrix") - na dowolnej sali
-//        4. kino.rezerwujMiejscaNaFilm("Matrix", 2) - rezerwowanie 2 miejsc na film Matrix
-//        5. kino.rezerwujMiejscaNaFilm("Matrix", 2, true) - rezerwowanie 2 miejsc na film Matrix, miejsca muszą być obok siebie
-//        6. kino.sprawdzIloscWolnychMiejsc("Tytul") - wyświetla ile sumarycznie jest wolnych miejsc na film o danym tytule
-//        7. kino.sprawdzIloscWolnychMiejsc(1) - wyświetla ile jest wolnych miejsc na pierwszej sali
+//        2. Kontruktory do części parametrów
+//          Nasze auto ma się inicjalizować się z nadawaną marką i poziomem paliwa równym 0
+
+//        Stwórz konstruktor w klasie Pies, który ma przyjmować imie i ustawiać wiek na 0
+
+//        3. Zmienianie pól za pomocą metod
+//          Nasze auto ma mieć metodę tankuj(iloscPaliwa), która będzie powiekszała poziomPaliwa
+
+//        Stwórz metodę minalRok(), która będzie zwiększać wiek psa o 1
+
     }
 }
