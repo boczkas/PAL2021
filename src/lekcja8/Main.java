@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.util.Scanner;
 
 public class Main {
@@ -17,85 +18,104 @@ public class Main {
 
         // & bitowy and
 
-//        int liczba = 4;
-//        liczba = 0b100;
-//
-//        System.out.println("liczba = " + liczba);
-//        int wynik = liczba & 1;
-//
-//        System.out.println("liczba & 1 = " + wynik);
-//
-//        wynik = liczba & 15;
-//        System.out.println("liczba & 15 = " + wynik);
+        int liczba = 4;
+        liczba = 0b100;
+
+        System.out.println("liczba = " + liczba);
+        int wynik = liczba & 1;
+
+        System.out.println("liczba & 1 = " + wynik);
+
+        wynik = liczba & 15;
+        System.out.println("liczba & 15 = " + wynik);
 
         // | bitowy or
-//        wynik = liczba | 1;
-//        System.out.println("liczba | 1 = " + wynik);
-//
-//        wynik = liczba | 15;
-//        System.out.println("liczba | 15 = " + wynik);
+        wynik = liczba | 1;
+        System.out.println("liczba | 1 = " + wynik);
+
+        wynik = liczba | 15;
+        System.out.println("liczba | 15 = " + wynik);
 //
         // >> przesunięcie bitowe w prawo
-//        wynik = 4 >> 1;
-//        System.out.println("4 >> 1 = " + wynik);
+        wynik = 4 >> 1;
+        System.out.println("4 >> 1 = " + wynik);
 //
         // << przesunięcie bitowe w lewo
-//        wynik = 4 << 1;
-//        System.out.println("4 << 1 = " + wynik);
+        wynik = 4 << 1;
+        System.out.println("4 << 1 = " + wynik);
 
 //        2. Priorytety operatorów
 //        Jest cała tabelka:
 //        https://introcs.cs.princeton.edu/java/11precedence/
 
+        liczba = 300;
+        byte bajcik = (byte) liczba;
+        System.out.println(bajcik);
+
 
 //        3. Łańcuchy - String
-//        String powitanie = "Czesc";
-//        System.out.println(powitanie);
+        String powitanie = "Czesc";
+        System.out.println(powitanie);
 
 //        wyciąganie kawałka
-//        String kawalek = powitanie.substring(0, 3);
-//        System.out.println(kawalek);
+        String kawalek = powitanie.substring(0, 3);
+        System.out.println(kawalek);
 
+//        utworz Stringa "lubie placki" i zostaw z niego tylko placki
 //        składanie wielu stringów
-//        String nieLadne = "brzydkie";
-//        String wyrazenie = "slowo";
-//
-//        String wiadomosc = nieLadne + wyrazenie;
-//        System.out.println(wiadomosc);
+        String nieLadne = "brzydkie";
+        String wyrazenie = "slowo";
+
+        String wiadomosc = nieLadne + " " + wyrazenie;
+        System.out.println(wiadomosc);
 //
 //        składanie stringa z nieStringiem
-//        int wiek = 18;
-//        String ania = "Ala";
-//
-//        System.out.println(ania + " ma " + wiek + " lat ");
+        int wiek = 18;
+        String ania = "Ala";
+
+        System.out.println(ania + " ma " + wiek + " lat ");
 
 //        Znaki specjalne
+        System.out.println("Ala ma kota \\ \"Mruczka\" ");
 //        System.out.println("Ala ma kota \"Mruczka\"");
-//        System.out.println("\tLubi myszy \nale bardziej spac");
+        System.out.println("\tLubi myszy \nale bardziej spac");
+
+//        Ala ma kota
+//          a kot ma "Ale"
 
 //          Pusty łańcuch
 
 
-//        String pusty = "";
-//
-//        System.out.println(pusty.length() == 0);
-//        System.out.println(pusty.isEmpty());
+        String pusty = " ";
+
+        System.out.println(pusty.length() == 0);
+        System.out.println(pusty.isEmpty());
 
 //        2. charAt
-//        String witaj = "elo";
-//        System.out.println(witaj);
-//
-//        char znak = witaj.charAt(0);
-//        System.out.println(znak);
+        String witaj = "elo";
+        System.out.println(witaj);
 
-//        String tekst = "Ala ma kota, a kot ma ale";
-//        System.out.println(tekst.contains("ma"));
+        char znak = witaj.charAt(0);
+        System.out.println(znak);
 
-//        String[] podzielone = tekst.split(",");
-//
-//        for(String element : podzielone) {
-//            System.out.println(element);
+        String tekst = "Ala ma kota, a kot ma ale";
+        System.out.println(tekst.contains("ma"));
+
+//        1. Czy posiada tego stringa?
+//        int ilosc = 0;
+//        while (tekst.contains("ma")) {
+//            ilosc++;
+//            int maIndex = tekst.indexOf("ma");
+//            tekst = tekst.substring(maIndex + 2);
 //        }
+
+//        System.out.println(ilosc);
+        String[] podzielone = tekst.split("ma");
+
+        for(String element : podzielone) {
+            System.out.println(element);
+        }
+
 
 
 //        String tekst1 = "Ala ma kota\n, a kot ma ale\n a pies ma kota";
@@ -153,10 +173,10 @@ public class Main {
         System.out.println(text);
 
 //         Zapis
-//        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
-//        fileWriter.append("Witaj Swiecie!");
-//        fileWriter.close();
-//
+        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
+        fileWriter.append("Witaj Swiecie!");
+        fileWriter.close();
+
 //        String milo = "Bardzo miło z Panstwem pracować!";
 //        Files.write(Path.of("src/lekcja5/test.txt"), milo.getBytes(), StandardOpenOption.APPEND);
     }

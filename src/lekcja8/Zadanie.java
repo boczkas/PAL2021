@@ -6,11 +6,19 @@ import java.nio.file.Path;
 
 public class Zadanie {
     public static void main(String[] args) throws IOException {
-//        Pobierz książkę w formacie txt:
-//        https://czytac.com/java-book/book/pilipiuk-andrzej_czarownik-iwanow
+//        0.
+//        String tekst1 = "Ala ma kota\n, a kot ma ale\n a pies ma kota";
+//
+//        System.out.println(tekst1);
+//      Policz ile linii ma ten String
 
-//        Policz ile ma linii.
-//        Policz ile razy występuje słowo "jak"
+//        1. Napisz metodę sprawdzającą czy słowo jest palindromem - od początku i od końca czyta się go tak samo
+//          ala -> true
+//          kajak -> true
+//          kot -> false
+//        2.
+//        Policz ile linii ma książka.
+//        Policz ile razy występuje słowo "dolor"
 
         Path fileName = Path.of(System.getProperty("user.dir") + "/src/lekcja8/ksiazka.txt");
         System.out.println(System.getProperty("user.dir"));

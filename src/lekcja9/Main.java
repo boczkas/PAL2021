@@ -32,8 +32,9 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Dom hata = new Dom();
-        hata.otworzLodowke();
+        Kot mruczek = new Kot();
+        mruczek.imie = "Mruczek";
+        mruczek.miaucz();
 
 
 
