@@ -40,9 +40,5 @@ public class Main {
         for (Obywatel czlonekRodziny : rodzinka) {
             czlonekRodziny.showPocketMoney();
         }
-
-//        4. Przerobić powyższe na metody (+ wrzucić je do klasy), raisePocketMoney (co gdyby nie %  a kwota?)
-
-
     }
 }

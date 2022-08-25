@@ -27,12 +27,12 @@ public class Main {
         System.out.println(liczba2);
         System.out.println(liczby[6]);
 
-        String imie1 = imiona[0];
-        String imie2 = imiona[1];
-
-        System.out.println(imie1);
-        System.out.println(imie2);
-        System.out.println("-=============================-");
+//        String imie1 = imiona[0];
+//        String imie2 = imiona[1];
+//
+//        System.out.println(imie1);
+//        System.out.println(imie2);
+//        System.out.println("-=============================-");
 //        Jak wypisać wszystko co jest w danej tablicy?
         for (String s : imiona) {
             System.out.println(s);
@@ -42,24 +42,28 @@ public class Main {
         for (int i = 0; i < imiona.length; i++) {
             System.out.println(imiona[i]);
         }
-
-        for (int i = 0; i < liczby.length; i++) {
-            System.out.println(liczby[i]);
-        }
-
+//
+//        for (int i = 0; i < liczby.length; i++) {
+//            System.out.println(liczby[i]);
+//        }
+//
         imiona[0] = "Staszek";
 
-        System.out.println("-=============================-");
-
+        for (int i = 0; i < imiona.length; i++) {
+            System.out.println(imiona[i]);
+        }
+//
+//        System.out.println("-=============================-");
+//
         wypisywaczka(imiona);
 //        forEach
 
 
-        int[] liczby2 = {5, 6, 1, 2, 90};
+//        int[] liczby2 = {5, 6, -1, 2, 90};
 //        90, 6, 5, 2, 1
 //        1, 2, 5, 6, 90
-        System.out.println(znajdzNajmniejsza(liczby2));
-        System.out.println(znajdzNajmniejsza2(liczby2));
+//        System.out.println(znajdzNajmniejsza(liczby2));
+//        System.out.println(znajdzNajmniejsza2(liczby2));
     }
 
     private static int znajdzNajmniejsza2(int[] liczby) {
