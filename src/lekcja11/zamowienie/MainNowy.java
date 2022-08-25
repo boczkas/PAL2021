@@ -10,20 +10,25 @@ public class MainNowy {
 //        Array jest statyczny. Jak zrobimy tablice na 5 elementów to koniec
         int[] tablica = {1, 2, 3, 4, 5};
 //        To spowoduje nam wyjątek, bo jest poza zakresem
-        tablica[6] = 7;
+//        tablica[6] = 7;
 
 //        Tu nie ma problemu
         List<Integer> integerList = new ArrayList<>();
         integerList.add(1);
-        integerList.add(2);
+        integerList.add(20);
         integerList.add(3);
         integerList.add(4);
-        integerList.add(5);
+        integerList.add(10);
         integerList.add(6);
         integerList.add(7);
 
         for (Integer liczba : integerList) {
             System.out.println(liczba);
+        }
+
+        System.out.println("==============");
+        for (int i = 0; i < integerList.size(); i++) {
+            System.out.println(integerList.get(i));
         }
 
 

@@ -32,13 +32,13 @@ public class Main {
         }
 //
 ////        Podnosimy wszystkim kieszonkowe o 5%
-        for (Obywatel czlonekRodziny : rodzinka) {
-            czlonekRodziny.increasePocketMoney(5);
-        }
+//        for (Obywatel czlonekRodziny : rodzinka) {
+//            czlonekRodziny.increasePocketMoney(5);
+//        }
 //
 ////        Pokazujemy wszystkim ile maja kieszonkowego
-        for (Obywatel czlonekRodziny : rodzinka) {
-            czlonekRodziny.showPocketMoney();
-        }
+//        for (Obywatel czlonekRodziny : rodzinka) {
+//            czlonekRodziny.showPocketMoney();
+//        }
     }
 }
