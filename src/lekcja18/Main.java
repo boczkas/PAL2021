@@ -15,6 +15,7 @@ public class Main {
         if(zKlawiatury.equals("na polowanie")) {
             kaczka = new PrzynetaNaPolowaniaKaczka();
         }
+        kaczka.kwacz();
 
 
 //        Mamy to co ostatnio
@@ -64,6 +65,7 @@ public class Main {
         }
 
 //        Popatrzmy sobie, że w obu przypadkach coś nam się świeci na szaro. Skopiowany Comparator imienia:
+//        Przerobić na lambde
         Comparator<Pracownik> comparatorImienia2 = new Comparator<Pracownik>() {
             @Override
             public int compare(Pracownik o1, Pracownik o2) {

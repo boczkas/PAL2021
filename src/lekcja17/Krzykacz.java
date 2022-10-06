@@ -13,4 +13,9 @@ public interface Krzykacz {
     private void lala(){
         System.out.println("Lalal");
     }
+
+
+    default void mowGlosno() {
+        System.out.println("Mowie glosno");
+    }
 }

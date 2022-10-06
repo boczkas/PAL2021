@@ -61,7 +61,7 @@ public class Obywatel {
         System.out.println(this.name + ": " + this.pocketMoney);
     }
 
-    public void increasePocketMoney(int percentage) {
-        this.pocketMoney = this.pocketMoney + (this.pocketMoney * percentage) / 100;
+    public void increasePocketMoney(int kwota) {
+        this.pocketMoney += kwota;
     }
 }

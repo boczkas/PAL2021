@@ -4,6 +4,8 @@ import lekcja14.Pracownik;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -26,16 +28,19 @@ public class Main {
         //        Java 11
         var zwierzetaArrayList = new ArrayList<Zwierze>();
 
+        var osiem = 8;
+        var scanner = new Scanner(System.in);
+
 //        3. Dostęp do elementów tablicy
-//        System.out.println("tablica element 0 " + tablica[0]);
-//        System.out.println("tablica element 1 " + tablica[1]);
-//        System.out.println("tablica element 2 " + tablica[2]);
+        System.out.println("tablica element 0 " + tablica[0]);
+        System.out.println("tablica element 1 " + tablica[1]);
+        System.out.println("tablica element 2 " + tablica[2]);
 //        System.out.println("tablica element 11 " + tablica[11]);
 
 //        4. Dostęp do elementów listy
-//        System.out.println("lista element 0 " + lista.get(0));
-//        System.out.println("lista element 1 " + lista.get(1));
-//        System.out.println("lista element 2 " + lista.get(2));
+        System.out.println("lista element 0 " + lista.get(0));
+        System.out.println("lista element 1 " + lista.get(1));
+        System.out.println("lista element 2 " + lista.get(2));
 //        System.out.println("lista element 2 " + lista.get(11));
 
 
@@ -86,28 +91,20 @@ public class Main {
 //        ...
 
 //  //      8. Metody ze zmienną liczbą parametrów
-//  //      Metoda printf
-        System.out.println();
-        System.out.print("Ala");
-        System.out.printf("Ala");
-        System.out.printf("%s", "Ala", 7, 19, "Kot");
-        System.out.printf("%d\n", 7);
-        System.out.printf("%s = %d", "ilośc dni w roku", 365);
-        System.out.println();
+//  //      Metoda asList
+        List<Pies> psy1 = Arrays.asList(new Pies("Burek"), new Pies("Reks"));
+        List<Pies> psy2 = Arrays.asList(new Pies("Burek"), new Pies("Reks"), new Pies("Staszek"));
+
 
         wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"), new Kot("Mruczek"));
+        wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"));
+        wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"), new Kot("Jozek"), new Kot("Jozek"));
 //        W obu przypadkach wywołana jest ta sama metoda mimo, że w pierwszym przypadku przekazujemy 2 parametry,
 //        a w drugim 3. Co tu się tak na prawdę dzieje?
 //        Co gdy przekazujemy parametr jako prymitywa? Przecież nie dziedziczą po Object
 
 //        9. Można tworzyć własne metody ze zmienną liczbą parametrów (również prymitywnymi)
 //          Napisz metodę wyświetlKoty(), przyjmującą dowolna ilość kotów po czym ją wyświetlającą
-
-        ArrayList<Pomiar> krytyczneWartosci = new ArrayList<>();
-        krytyczneWartosci.add(new Pomiar(100, "01.01.2021"));
-        krytyczneWartosci.add(new Pomiar(0, "01.02.2021"));
-
-        Pomiar pomiarZCzujnika = new Pomiar(20, "17.06.2021");
 
     }
 

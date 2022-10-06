@@ -1,5 +1,7 @@
 package lekcja9;
 
+import java.util.Scanner;
+
 public class Main {
 //    1. Programowanie proceduralne vs strukturalne
 //      To co robiliśmy do tej pory było strukturalne.
@@ -34,7 +36,12 @@ public class Main {
 
         Kot mruczek = new Kot();
         mruczek.imie = "Mruczek";
-        mruczek.miaucz();
+        mruczek.wiek = 4;
+
+        Kot miauczek = new Kot();
+        miauczek.imie = "Miauczek";
+        miauczek.wiek = 4;
+        mruczek.miaucz("Przemek");
 
 
 
@@ -50,8 +57,8 @@ public class Main {
 //        mruczek.przywitajSie("Przemek");
 //        mruczek.skakaj();
 
-//        Samochod stilo = new Samochod();
-//        stilo.odpal();
+        Samochod stilo = new Samochod();
+        stilo.odpal();
 
 //        Kino kino = new Kino();
 //        kino.rezerwujMiejsce(1);

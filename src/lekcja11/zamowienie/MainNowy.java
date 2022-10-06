@@ -13,7 +13,7 @@ public class MainNowy {
 //        tablica[6] = 7;
 
 //        Tu nie ma problemu
-        List<Integer> integerList = new ArrayList<>();
+        ArrayList<Integer> integerList = new ArrayList<>();
         integerList.add(1);
         integerList.add(20);
         integerList.add(3);
@@ -21,6 +21,7 @@ public class MainNowy {
         integerList.add(10);
         integerList.add(6);
         integerList.add(7);
+
 
         for (Integer liczba : integerList) {
             System.out.println(liczba);
@@ -32,7 +33,11 @@ public class MainNowy {
         }
 
 
-        List<String> pola = new ArrayList<>();
+        ArrayList<String> pola = new ArrayList<>();
+
+        for (int i = 0; i < 10; i++) {
+            pola.add("| |");
+        }
 
         for (int i = 0; i < 10; i++) {
             pola.add("| |");
@@ -41,17 +46,22 @@ public class MainNowy {
         pola.set(2, "|X|");
         pola.set(5, "|O|");
         pola.set(7, "|X|");
-
-        for (String pole : pola) {
-            System.out.print(pole);
+//
+        for (int i = 0; i < 10; i++) {
+            System.out.print(pola.get(i));
         }
 
-        System.out.println();
+//        for (String pole : pola) {
+//            System.out.print(pole);
+//        }
+
+//
+//        System.out.println();
         System.out.println();
 
         //        2. Używanie klas wbudowanych
 //        Przejdziemy przez pakiet Time
-        LocalTime localTime = LocalTime.of(1,1,1);
+        LocalTime localTime = LocalTime.of(1, 1, 1);
         System.out.println(localTime);
 
         LocalTime localTimePlusTwo = localTime.plusHours(2);

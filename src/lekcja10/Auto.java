@@ -4,20 +4,25 @@ public class Auto {
     String marka;
     int poziomPaliwa;
 
+    static int iloscAut;
+
     public Auto() {
     }
 
     public Auto(String marka, int poziomPaliwa) {
         this.marka = marka;
         this.poziomPaliwa = poziomPaliwa;
+        iloscAut++;
     }
 
     public Auto(String marka) {
-        this(marka, 0);
+        this.marka = marka;
+        this.poziomPaliwa = 0;
+        iloscAut++;
     }
 
     void zatankuj(int iloscPaliwa) {
         System.out.println("Tankujemy!");
-        poziomPaliwa += iloscPaliwa;
+        this.poziomPaliwa += iloscPaliwa;
     }
 }

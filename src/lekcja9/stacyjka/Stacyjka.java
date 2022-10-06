@@ -2,7 +2,7 @@ package lekcja9.stacyjka;
 
 public class Stacyjka {
     // składowa
-    boolean przekrecona;
+    private boolean przekrecona;
 
     public Stacyjka() {
         this.przekrecona = false;

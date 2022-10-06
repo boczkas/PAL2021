@@ -24,8 +24,13 @@ public class Main {
 //        3. Zmienianie pól za pomocą metod
 //          Nasze auto ma mieć metodę tankuj(iloscPaliwa), która będzie powiekszała poziomPaliwa
 
+        System.out.println("Poziom paliwa przed:");
+        System.out.println(auto.poziomPaliwa);
         auto.zatankuj(20);
+        System.out.println("Poziom paliwa po:");
         System.out.println(auto.poziomPaliwa);
 //        Stwórz metodę minalRok(), która będzie zwiększać wiek psa o 1
+
+        System.out.println(Auto.iloscAut);
     }
 }

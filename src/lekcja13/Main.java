@@ -6,21 +6,25 @@ import lekcja13.zwierzaki.SpiacyPies;
 import lekcja13.zwierzaki.SzkolonyPies;
 import lekcja13.zwierzaki.Pies;
 
+
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.lang.Math.pow;
 
 public class Main {
     public static void main(String[] args) {
 //        1. Pakiety - utworzyć zmienna typu LocalDate. Co oznacza ten import?
-        LocalDate localDate;
+        LocalDate placek;
 //        2. Tworzenie pakietów.
 //        Pakiety tworzy się w celu organizacji pracy oraz uniknięcia konfliktów nazw. Jak u nas z Obywatelem.
 //        Popatrz na pierwszą linike w naszych klasach w poprzednich lekcjach. W szczególności na lekcję 9.
-//        Każda klasa może używać wszystkich klas (kiedyś o prywatnych) ze swojego pakietu oraz PUBLICZNYCH klas z pozostałych pakietów.
 
         Osoba domowaOsoba = new Osoba();
-//        Obywatel obywatel = new Obywatel();
+        String tekst = "cos";
 
 //        Zadanie:
 //              - utwórz pakiet dom
@@ -30,8 +34,8 @@ public class Main {
 //
 
 //        3. Importowanie statyczne
-        double pow = Math.pow(2, 2);
-//        double pow = pow(2, 2);
+//        double pow = Math.pow(2, 2);
+        double pow = pow(2, 2);
 
 //        4. Modyfikatory dostępu.
 //        Utworzyć klasę Obywatel w pakiecie dom. Usunac jej modyfikator dostepu.
@@ -41,51 +45,47 @@ public class Main {
 
         Osoba osoba = new Osoba();
         osoba.sayHello();
+
 //        5. Dziedziczenie
 
 //        Klasy mogą po sobie dziedziczyć. W Javie można dziedziczyć tylko po jednej klasie
-//        Stwórz klasę Pies posiadającą imie i wiek. Utwórz odpowiedni kontruktor.
-//        Stwórz klasę SzkolonyPies dziedziczącą po Villager, z dodatkowym polem umiejętność.
+//        Stwórz klasę Pies posiadającą imie i wiek. Utwórz odpowiedni konstruktor.
+//        Stwórz klasę SzkolonyPies dziedziczącą po Pies, z dodatkowym polem umiejętność.
 //        Utwórz konstruktor, który będzie przyjmował dodatkowy argument
 
         Pies pies = new Pies("Staszek", 45);
+        pies.sayHello();
+        SpiacyPies spiacyPies = new SpiacyPies("Edek", 5);
+        spiacyPies.sayHello();
 
         SzkolonyPies szkolonyPies = new SzkolonyPies("Niezwkly", 100, "maluje");
-
-        pies.sayHello();
-        szkolonyPies.sayHello();
-//        Klasa Pies ma dysponować metodą sayHello(), w której mieszkaniec wioski wita się swoim imieniem i wiekiem.
+//
+//        pies.sayHello();
+//        szkolonyPies.sayHello();
+//        Klasa Pies ma dysponować metodą sayHello(), w której pies wita się swoim imieniem i wiekiem.
 //        Klasa SzkolonyPies ma nadpisywać metodę sayHello(), tak aby witał się imieniem, wiekiem oraz umiejętnością.
 
-//        Pies mieszkaniec = new SzkolonyPies();
-//
+        Pies bardzoSpiacyPies = new SzkolonyPies("burek", 10, "szuka");
+        bardzoSpiacyPies.sayHello();
+
 //        Dodać klasę SpiacyPies, który w hello() odpowiada, że nie ma siły gadać.
 //
-        SpiacyPies spiacyPies = new SpiacyPies("Spiacy", 30);
-        spiacyPies.sayHello();
-        System.out.println(spiacyPies);
-//        List<Pies> mieszkancyWioski = new ArrayList<>();
-//        mieszkancyWioski.add(pies);
-//        mieszkancyWioski.add(szkolonyPies);
-//        mieszkancyWioski.add(spiacyPies);
+//        SpiacyPies spiacyPies = new SpiacyPies("Spiacy", 30);
+//        spiacyPies.sayHello();
+//        System.out.println(spiacyPies);
+        List<Pies> mieszkancyWioski = new ArrayList<>();
+        mieszkancyWioski.add(pies);
+        mieszkancyWioski.add(szkolonyPies);
+        mieszkancyWioski.add(spiacyPies);
 //
-//        System.out.println("------------------------");
-//        for (Pies mieszkaniec : mieszkancyWioski) {
-//            mieszkaniec.sayHello();
-//        }
-//
+        System.out.println("------------------------");
+        for (Pies mieszkaniec : mieszkancyWioski) {
+            mieszkaniec.sayHello();
+        }
 
+
+//        CO TO POLIMORFIZM?
 //        Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
 //        Polimofizm oznacza, że możemy w miejsce klasy bazowej podstawić dowolny element z klasy dziedziczącej.
-
-//        Każda klasa dziedziczy po klasie Object
-//        SpiacyPies spiacyPies = new SpiacyPies()
-//        Object ukrytyMieszkaniec = mieszkaniec;
-//        Sprawdzić jakie ma metody.
-//        SpiacyPies odkrytyMieszkaniec = (SpiacyPies) ukrytyMieszkaniec;
-
-        Object object = new Pies("Staszek", 50);
-        Pies odkrytyPies = (Pies) object;
-        odkrytyPies.sayHello();
     }
 }

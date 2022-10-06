@@ -5,6 +5,6 @@ public class Glowna {
         Kot mruczek = new Kot();
         mruczek.imie = "Mruczek";
 
-        mruczek.miaucz();
+//        mruczek.miaucz();
     }
 }

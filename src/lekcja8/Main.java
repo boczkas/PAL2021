@@ -24,6 +24,8 @@ public class Main {
         System.out.println("liczba = " + liczba);
         int wynik = liczba & 1;
 
+//
+
         System.out.println("liczba & 1 = " + wynik);
 
         wynik = liczba & 15;
@@ -76,7 +78,8 @@ public class Main {
         System.out.println(ania + " ma " + wiek + " lat ");
 
 //        Znaki specjalne
-        System.out.println("Ala ma kota \\ \"Mruczka\" ");
+        System.out.println("Ala ma kota \"Mruczka\"");
+//        System.out.println("Ala ma kota \\ \"Mruczka\" ");
 //        System.out.println("Ala ma kota \"Mruczka\"");
         System.out.println("\tLubi myszy \nale bardziej spac");
 
@@ -89,17 +92,32 @@ public class Main {
         String pusty = " ";
 
         System.out.println(pusty.length() == 0);
-        System.out.println(pusty.isEmpty());
+        System.out.println(pusty.isBlank());
 
 //        2. charAt
         String witaj = "elo";
         System.out.println(witaj);
-
-        char znak = witaj.charAt(0);
+//
+        char znak = witaj.charAt(1);
         System.out.println(znak);
 
         String tekst = "Ala ma kota, a kot ma ale";
         System.out.println(tekst.contains("ma"));
+
+        int maIndex = tekst.indexOf("ma");
+        System.out.println(maIndex);
+
+        int ilosc = 0;
+
+        while(tekst.contains("ma")) {
+            ilosc++;
+            int maIndex2 = tekst.indexOf("ma");
+            tekst = tekst.substring(maIndex2 + 2);
+        }
+
+        System.out.println(ilosc);
+
+
 
 //        1. Czy posiada tego stringa?
 //        int ilosc = 0;
@@ -110,11 +128,11 @@ public class Main {
 //        }
 
 //        System.out.println(ilosc);
-        String[] podzielone = tekst.split("ma");
-
-        for(String element : podzielone) {
-            System.out.println(element);
-        }
+//        String[] podzielone = tekst.split("ma");
+//
+//        for(String element : podzielone) {
+//            System.out.println(element);
+//        }
 
 
 
@@ -157,25 +175,25 @@ public class Main {
 
 //        Odczyt
 
-        File file = new File(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
-        Scanner scanner = new Scanner(file);
-
-        while (scanner.hasNextLine()) {
-            System.out.println(scanner.nextLine());
-        }
-
-        System.out.println("=================");
-        // A co to to getProperty?
-        Path fileName = Path.of(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
-        System.out.println("System.getProperty");
-        System.out.println(System.getProperty("user.dir"));
-        String text = Files.readString(fileName);
-        System.out.println(text);
+//        File file = new File(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
+//        Scanner scanner = new Scanner(file);
+//
+//        while (scanner.hasNextLine()) {
+//            System.out.println(scanner.nextLine());
+//        }
+//
+//        System.out.println("=================");
+//        // A co to to getProperty?
+//        Path fileName = Path.of(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
+//        System.out.println("System.getProperty");
+//        System.out.println(System.getProperty("user.dir"));
+//        String text = Files.readString(fileName);
+//        System.out.println(text);
 
 //         Zapis
-        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
-        fileWriter.append("Witaj Swiecie!");
-        fileWriter.close();
+//        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
+//        fileWriter.append("Witaj Swiecie!");
+//        fileWriter.close();
 
 //        String milo = "Bardzo miło z Panstwem pracować!";
 //        Files.write(Path.of("src/lekcja5/test.txt"), milo.getBytes(), StandardOpenOption.APPEND);

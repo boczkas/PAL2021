@@ -20,10 +20,10 @@ public class Main {
 //              -   klasa Pies implementująca Krzykacz
 //              -   klasa Trabka implementujaca Krzykacz
 //
-        List<Krzykacz> krzykaczs = List.of(new Pies(), new Kot(), new Trabka(),
+        List<Krzykacz> krzykacze = List.of(new Pies(), new Kot(), new Trabka(),
                 new Pracownik("Ania", 100000));
 
-        for(Krzykacz krzykacz : krzykaczs) {
+        for(Krzykacz krzykacz : krzykacze) {
             krzykacz.wydajDzwiek();
         }
 
@@ -43,16 +43,16 @@ public class Main {
 
 //        Klasa Pracownik i sortowanie obiektów tego typu po wypłacie
 //        Chcielibyśmy skorzystać z metody Arrays.sort() (Niekoniecznie tak się to teraz robi, ale to
-//        tylko przykład)
+//        tylko przykład)]
         Pracownik nikoletta = new Pracownik("Nikoletta", 0);
         Pracownik ania = new Pracownik("Ania", 1000000);
         Pracownik przemek = new Pracownik("Przemek", 5000);
         Pracownik barylek = new Pracownik("Baryłek", 20000);
-//
+
         Pracownik[] pracownicy = {nikoletta, ania, przemek, barylek};
 
-        for(Krzykacz krzykacz2 : pracownicy) {
-            System.out.println(krzykacz2);
+        for(var pracownik : pracownicy) {
+            System.out.println(pracownik);
         }
 
         Arrays.sort(pracownicy);
@@ -72,6 +72,7 @@ public class Main {
         Krzykacz.zwiekszGlosnosc(10);
         ania.nakrzycz(barylek);
 
+        ania.mowGlosno();
 
 //        Co gdybyśmy chcieli do naszego interfejsu dołożyć metodę?
 //        Pojawia się problem, że musimy ją zaimplementować we wszystkich klasach implementujących
@@ -80,7 +81,5 @@ public class Main {
 //        Metody domyślne interfejsów.
 
 //        2. Co się stanie gdy dwa interfejsy mają tą samą metodę domyślną?
-
-        List<String> stringList = new LinkedList<>();
     }
 }
