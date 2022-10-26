@@ -26,6 +26,10 @@ public class Main {
         Osoba domowaOsoba = new Osoba();
         String tekst = "cos";
 
+//        lekcja13.firma.Osoba firmowaOsoba = new lekcja13.firma.Osoba();
+
+
+
 //        Zadanie:
 //              - utwórz pakiet dom
 //              - utwórz pakiet firma
@@ -61,27 +65,27 @@ public class Main {
         SzkolonyPies szkolonyPies = new SzkolonyPies("Niezwkly", 100, "maluje");
 //
 //        pies.sayHello();
-//        szkolonyPies.sayHello();
+        szkolonyPies.sayHello();
 //        Klasa Pies ma dysponować metodą sayHello(), w której pies wita się swoim imieniem i wiekiem.
 //        Klasa SzkolonyPies ma nadpisywać metodę sayHello(), tak aby witał się imieniem, wiekiem oraz umiejętnością.
 
-        Pies bardzoSpiacyPies = new SzkolonyPies("burek", 10, "szuka");
-        bardzoSpiacyPies.sayHello();
+//        Pies bardzoSpiacyPies = new SzkolonyPies("burek", 10, "szuka");
+//        bardzoSpiacyPies.sayHello();
 
 //        Dodać klasę SpiacyPies, który w hello() odpowiada, że nie ma siły gadać.
 //
 //        SpiacyPies spiacyPies = new SpiacyPies("Spiacy", 30);
 //        spiacyPies.sayHello();
 //        System.out.println(spiacyPies);
-        List<Pies> mieszkancyWioski = new ArrayList<>();
-        mieszkancyWioski.add(pies);
-        mieszkancyWioski.add(szkolonyPies);
-        mieszkancyWioski.add(spiacyPies);
+//        List<Pies> mieszkancyWioski = new ArrayList<>();
+//        mieszkancyWioski.add(pies);
+//        mieszkancyWioski.add(szkolonyPies);
+//        mieszkancyWioski.add(spiacyPies);
 //
-        System.out.println("------------------------");
-        for (Pies mieszkaniec : mieszkancyWioski) {
-            mieszkaniec.sayHello();
-        }
+//        System.out.println("------------------------");
+//        for (Pies mieszkaniec : mieszkancyWioski) {
+//            mieszkaniec.sayHello();
+//        }
 
 
 //        CO TO POLIMORFIZM?

@@ -37,7 +37,7 @@ public class Main {
 
 
 //        2. Klasy finalne - nie chcemy dawać możliwości dziedziczenia po niej
-//        ChorySlon chorySlon = new ChorySlon();
+        ChorySlon chorySlon = new ChorySlon();
 
 //        3. Ograniczenia dostępu
 //        public - widoczność wszędzie
@@ -45,15 +45,16 @@ public class Main {
 //        <default> - widoczność w obrębie pakietu
 //        private - widoczność w obrębie klasy
 
-        int a = 5;
-        Integer b = 5;
-        Pies pies = new Pies("Staszek", 4);
-
+//        int a = 5;
+//        Integer b = 5;
+//        Pies pies = new Pies("Staszek", 4);
+//
         Pracownik pracownik = new Pracownik("Tomek", 100);
         pracownik.powiekszWyplateo100();
         System.out.println(pracownik.wyplata);
         pracownik.powiekszWyplateo200();
         System.out.println(pracownik.wyplata);
+
 
 //        Scanner scanner = new Scanner(System.in);
 //        String s = scanner.nextLine();
@@ -71,16 +72,16 @@ public class Main {
 //        Stworzyć klasę w podpakiecie dziedziczącą po Pracownik'u
 
 //        4. equals()
-//        Pracownik tomek = new Pracownik("Tomek", 100);
-//        Pracownik staszek = new Pracownik("Staszek", 5);
-//        boolean equals = tomek.equals(staszek);
-//        System.out.println(equals);
+        Pracownik tomek = new Pracownik("Tomek", 100);
+        Pracownik staszek = new Pracownik("Staszek", 5);
+        boolean equals = tomek.equals(staszek);
+        System.out.println(equals);
 
 
         Pracownik marek = new Pracownik("Marek", 100);
-        Pracownik innyMarek = new Pracownik("Marek", 200);
-        System.out.println(marek.equals(innyMarek));
-        System.out.println(innyMarek.equals(marek));
+        Pracownik tenSamMarek = new Pracownik("Marek", 100);
+        System.out.println(marek.equals(tenSamMarek));
+//        System.out.println(tenSamMarek.equals(marek));
 
 
 //        Domyślne zachowanie to sprawdzanie równości referencji
@@ -97,10 +98,10 @@ public class Main {
 
 //        5. hashCode() - powinna wyliczyć w miarę unikatową wartość dla obiektu. Pokazać jak nam wygenerowało
 //        6. toString() - nadpisać automatycznie, nadpisać z
-        Pracownik tomek = new Pracownik("Tomek", 100);
-        System.out.println(tomek.toString());
+//        Pracownik tomek = new Pracownik("Tomek", 100);
+//        System.out.println(tomek.toString());
 
-//        System.out.println(tomek);
+        System.out.println(tomek.toString());
 
     }
 }

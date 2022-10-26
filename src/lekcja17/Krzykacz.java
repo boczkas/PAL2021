@@ -14,6 +14,9 @@ public interface Krzykacz {
         System.out.println("Lalal");
     }
 
+    default void nakrzycz() {
+        System.out.println("Nie zaimplementowana");
+    }
 
     default void mowGlosno() {
         System.out.println("Mowie glosno");

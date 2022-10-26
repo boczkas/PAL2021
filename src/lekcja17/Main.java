@@ -27,17 +27,20 @@ public class Main {
             krzykacz.wydajDzwiek();
         }
 
-        Krzykacz krzykacz = new Krzykacz() {
-            @Override
-            public void wydajDzwiek() {
-                System.out.println("Krzycz!");
-            }
-        };
 
+//        Krzykacz krzykacz = new Krzykacz() {
+//            @Override
+//            public void wydajDzwiek() {
+//                System.out.println("Krzycz!");
+//            }
+//        };
+//
         Krzykacz krzykacz1 = new Pracownik("lala", 10);
+        System.out.println(Krzykacz.a);
 
-
-
+//
+//
+//
 //        W interfejsach możemy mieć pola, ale są to tak naprawdę stałe, bo są one public static final
 //        Nie możemy tworzyć instancji interfejsu.
 
@@ -70,10 +73,10 @@ public class Main {
 //        Dołóżmy zwiększGlosnosc(aktualnaGlosnosc) do naszego Krzykacza
 
         Krzykacz.zwiekszGlosnosc(10);
-        ania.nakrzycz(barylek);
-
-        ania.mowGlosno();
-
+//        ania.nakrzycz(barylek);
+//
+//        ania.mowGlosno();
+//
 //        Co gdybyśmy chcieli do naszego interfejsu dołożyć metodę?
 //        Pojawia się problem, że musimy ją zaimplementować we wszystkich klasach implementujących
 //        interfejs. Wydaje się, że może to być dużo roboty jeśli tych klas jest sporo

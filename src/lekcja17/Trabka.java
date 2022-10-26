@@ -6,4 +6,9 @@ public class Trabka implements Krzykacz {
     public void wydajDzwiek() {
         System.out.println("Trututu");
     }
+
+    @Override
+    public void nakrzycz() {
+        System.out.println("Krzycze po trabkowemu");
+    }
 }

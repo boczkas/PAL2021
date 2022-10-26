@@ -90,20 +90,20 @@ public class Main {
 //        while(<warunek_prawdziwy>) {
 //            Rob cos
 //        }
-//        int i = 5;
-//        while (i < 15) {
-//            System.out.println("i = " + i);
-//            i++;
-//        }
+        int i = 5;
+        while (i < 15) {
+            System.out.println("i = " + i);
+            i++;
+        }
 //        Wypisz liczby od 10 do 0;
 
 //        7. Pętla for()
 //        for(inicjalizacja; warunek_zakonczenia; co_robimy_co_obieg) {
 //            Robimy coś
 //        }
-//        for (int j = 5; j < 15; j++) {
-//            System.out.println("j = " + j);
-//        }
+        for (int j = 5; j < 15; j++) {
+            System.out.println("j = " + j);
+        }
 
 //        Wypisz liczby od 0 do 10;
 

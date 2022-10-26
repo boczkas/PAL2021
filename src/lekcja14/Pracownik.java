@@ -42,7 +42,9 @@ public class Pracownik {
 
     @Override
     public String toString() {
-        return "Pracownik{" + imie +  wyplata +
+        return "Pracownik{" +
+                "imie='" + imie + '\'' +
+                ", wyplata=" + wyplata +
                 '}';
     }
 }

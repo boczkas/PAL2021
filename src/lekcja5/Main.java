@@ -39,16 +39,12 @@ public class Main {
         } else if (guess > wylosowana) {
             System.out.println("Za duzo");
         }
-        while (guess != wylosowana) {
-            System.out.println("Podaj kolejna liczbe");
-            guess = scanner.nextInt();
 
             if (guess < wylosowana) {
                 System.out.println("Za mało");
             } else if (guess > wylosowana) {
                 System.out.println("Za duzo");
             }
-        }
         System.out.println("GRATULACJE!");
 
 //        2. Robimy wspólnie zadanie domowe
