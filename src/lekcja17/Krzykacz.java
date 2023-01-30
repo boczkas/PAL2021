@@ -19,6 +19,6 @@ public interface Krzykacz {
     }
 
     default void mowGlosno() {
-        System.out.println("Mowie glosno");
+        System.out.println("Mowie glosno!");
     }
 }

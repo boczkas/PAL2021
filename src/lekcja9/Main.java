@@ -38,11 +38,13 @@ public class Main {
         mruczek.imie = "Mruczek";
         mruczek.wiek = 4;
 
+        System.out.println(mruczek.imie);
+        System.out.println(mruczek.wiek);
+
         Kot miauczek = new Kot();
         miauczek.imie = "Miauczek";
         miauczek.wiek = 4;
-        mruczek.miaucz("Przemek");
-
+        miauczek.miaucz("Eryk");
 
 
 //        Arbuz fioletowyArbuz = new Arbuz();

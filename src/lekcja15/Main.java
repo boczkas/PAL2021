@@ -29,6 +29,7 @@ public class Main {
         var zwierzetaArrayList = new ArrayList<Zwierze>();
 
         var osiem = 8;
+
         var scanner = new Scanner(System.in);
 
 //        3. Dostęp do elementów tablicy
@@ -82,6 +83,7 @@ public class Main {
 //        ArrayList<int> liczbyCalkowite = new ArrayList<int>();
         ArrayList<Integer> liczbyCalkowite = new ArrayList<>();
         Integer liczba = 10;
+        liczbyCalkowite.add(liczba);
 
 //        Integer - typ opakowywujący. Występują dla każdego typu prymitywnego
 //        int - Integer
@@ -94,8 +96,8 @@ public class Main {
 //  //      Metoda asList
         List<Pies> psy1 = Arrays.asList(new Pies("Burek"), new Pies("Reks"));
         List<Pies> psy2 = Arrays.asList(new Pies("Burek"), new Pies("Reks"), new Pies("Staszek"));
-
-
+//
+//
         wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"), new Kot("Mruczek"));
         wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"));
         wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"), new Kot("Jozek"), new Kot("Jozek"));

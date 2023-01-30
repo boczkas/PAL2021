@@ -31,6 +31,6 @@ public class Main {
         System.out.println(auto.poziomPaliwa);
 //        Stwórz metodę minalRok(), która będzie zwiększać wiek psa o 1
 
-        System.out.println(Auto.iloscAut);
+//        System.out.println(Auto.iloscAut);
     }
 }

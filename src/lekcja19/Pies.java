@@ -1,4 +1,4 @@
-package lekcja19_nowy;
+package lekcja19;
 
 import java.util.Objects;
 

@@ -12,6 +12,14 @@ public class Main {
 //          - Stworzyć sobie enuma do dni, na zasanie PN, WT, SR.
 //              Enum to tak na prawdę klasa. To co sobie tam tworzymy to instancje tej klasy.
 
+        DzienTygodnia dzienTygodnia = DzienTygodnia.PN;
+
+        if (dzienTygodnia.equals(DzienTygodnia.PN)) {
+            System.out.println("Dzis jest niedziela");
+        }
+
+        Zwierze zwierze = new Kot("a", 2);
+
         Miesiac miesiac = Miesiac.LUTY;
 
         if (miesiac == Miesiac.LUTY) {
@@ -37,12 +45,21 @@ public class Main {
 //          Mamy dwa rodzaje wyjątków checked i unchecked - sprawdzane i nie sprawdzane.
 //
 //              - checked
+
         File file = new File("lalala");
         try {
             FileInputStream inputStream = new FileInputStream(file);
         } catch (FileNotFoundException e) {
-            System.out.println("Nie ma takiego pliku");
+            System.out.println("nie ma takiego pliku");
         }
+
+
+//        try {
+//            FileInputStream inputStream = new FileInputStream(file);
+//        } catch (FileNotFoundException e) {
+//            throw new RuntimeException(e);
+//        }
+
 //        File file = new File("lala");
 //        try {
 //            FileInputStream inputStream = new FileInputStream(file);
@@ -59,30 +76,37 @@ public class Main {
 
         try {
             int liczba = Integer.parseInt(next);
-        System.out.println(liczba);
+            System.out.println(liczba);
         } catch (NumberFormatException e) {
             System.out.println("To nie liczba!");
         }
 
 
-        System.out.println("Podaj liczbe");
-        next = scanner.next();
-
-        if (next.matches("[0-9]+")) {
-            System.out.println("To liczba");
-        } else {
-            System.out.println("To nie liczba");
-        }
+//        System.out.println("Podaj liczbe");
+//        next = scanner.next();
+//
+//        if (next.matches("[0-9]+")) {
+//            System.out.println("To liczba");
+//        } else {
+//            System.out.println("To nie liczba");
+//        }
 
 //        Pokazać przykłady
 //        Napisać do okoła tego ładnego try/catcha
 
 //        4. Porady projektowe dotyczące dziedziczenia
 //          - wspólne metody i pola umieszczaj w nadklasach
-//          - nie używać pól protected, metody można jak najbardziej ale w klasie bazowej ma być ich "niedziałająca" implementacja
 //          - dziedziczenia używaj do określania relacji typu JEST
 //          - nie używaj dziedziczenia jeśli któraś z metod nie działa poprawnie (Kot dziedziczący po Psie)
 //          - nadpisując metodę nie zmieniaj jej oczekiwanego zachowania
 //          - wykorzystuj polimorfizm zamiast wykorzystywania informacji o typach
+    }
+
+    static void rzucacz() throws FileNotFoundException {
+        throw new FileNotFoundException();
+    }
+
+    static void elo() throws FileNotFoundException {
+        rzucacz();
     }
 }

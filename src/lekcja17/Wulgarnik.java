@@ -5,4 +5,8 @@ public interface Wulgarnik {
     default void krzycz() {
         System.out.println("Krzycze");
     }
+
+    default void mowGlosno() {
+        System.out.println("Mowie glosno!");
+    }
 }

@@ -1,40 +1,91 @@
 package lekcja20;
 
-import lekcja20.control.*;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    //    Stwórz interfejs ekspresu do kawy.
+//    1. Ekspres ma uruchamiać się w stanie domyślnym (składniki uzupełnione do maksimum),
+//    gdzie ma w sobie:
+//      - 10 jednostek kawy
+//      - 5 jednostek mleka
+//      - 10 jednostek wody
 
-        Map<String, Command> commandMap = Map.of(
-            "addRecepie", new AddRecepieCommand(),
-            "help", new HelpCommand(),
-            "makeDrink", new MakeDrinkCommand(),
-            "showIngredientsStatus", new ShowIngredientsStatusCommand(),
-            "showRecepies", new ShowRecepiesCommand()
-        );
+//    2. Mamy mieć możliwość wyboru 3 różnych kaw:
+//      - espresso - zużywa 2 jednostki kawy, 1 jednostkę wody
+//      - cappuccino - zużywa 1 jednostkę kawy, 2 jednoski mleka
+//      - americano - zużywa 2 jednostki kawy, 2 jednostki wody
 
-        String[] elementy = {"a", "b", "c"};
-        List<String> elementyLista = Arrays.asList(elementy);
+//    3. Jeżeli któregoś ze składników będzie brakować,
+//    ekspres ma zablokować możliwość przygotowania kawy.
 
-        elementyLista.subList(0, 2);
+//    4. Interfejs ma pozwalać na uzupełnienie składników.
+//      W momencie, gdy użytkownik wywoła uzupełnianie powinna zostać wyświetlona informacja
+//      jakiego składnika i jaka ilość została uzupełniona.
 
-        System.out.println("Hello, put some command!");
-        while (true) {
-            Command command = commandMap.get(scanner.next());
-            if (command != null) {
-                command.execute();
-            } else {
-                System.out.println("Unrecognized command");
-            }
-        }
+//    Zadanie domowe:
+//    1. Należy dodać kolejną opcję do menu pozwalającą na wyświetlenie aktualnego stanu składników
+//    2. Należy dodać możliwość przygotowywania gorącego mleka, które zużywa 3 jednostki mleka
+//    3. Należy dodać wyświetlanie jakiego składnika brakuje, gdy nie można przygotować napoju
 
 
+//    Przykładowe wywołanie:
+//
+//
+//    Jaką czynność chcesz wykonać?
+//    [1] Przygotowanie espresso
+//    [2] Przygotowanie cappuccino
+//    [3] Przygotowanie americano
+//    [4] Uzupełnienie składników
 
-    }
+//    -> 1
+//    Przygotowywanie espresso...
+
+//    Jaką czynność chcesz wykonać?
+//    [1] Przygotowanie espresso
+//    [2] Przygotowanie cappuccino
+//    [3] Przygotowanie americano
+//    [4] Uzupełnienie składników
+
+//    -> 2
+//    Przygotowywanie cappuccino...
+
+//    Jaką czynność chcesz wykonać?
+//    [1] Przygotowanie espresso
+//    [2] Przygotowanie cappuccino
+//    [3] Przygotowanie americano
+//    [4] Uzupełnienie składników
+
+//    Jaką czynność chcesz wykonać?
+//    [1] Przygotowanie espresso
+//    [2] Przygotowanie cappuccino
+//    [3] Przygotowanie americano
+//    [4] Uzupełnienie składników
+
+//    -> 2
+//    Przygotowywanie cappuccino...
+
+//    Jaką czynność chcesz wykonać?
+//    [1] Przygotowanie espresso
+//    [2] Przygotowanie cappuccino
+//    [3] Przygotowanie americano
+//    [4] Uzupełnienie składników
+
+//    -> 2
+//    Nie można przygotować cappuccino!
+//    Brak składników!
+
+//    Jaką czynność chcesz wykonać?
+//    [1] Przygotowanie espresso
+//    [2] Przygotowanie cappuccino
+//    [3] Przygotowanie americano
+//    [4] Uzupełnienie składników
+
+//    -> 4
+//    Uzupełnianie składników...
+//    Uzupełniono 4 jednostki kawy
+//    Uzupełniono 4 jednostki mleka
+//    Uzupełniono 1 jednostki wody
 }

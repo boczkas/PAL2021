@@ -24,20 +24,20 @@ public class Main {
         System.out.println("liczba = " + liczba);
         int wynik = liczba & 1;
 
+
 //
-
         System.out.println("liczba & 1 = " + wynik);
-
+//
         wynik = liczba & 15;
         System.out.println("liczba & 15 = " + wynik);
-
-        // | bitowy or
+//
+//         | bitowy or
         wynik = liczba | 1;
         System.out.println("liczba | 1 = " + wynik);
-
+//
         wynik = liczba | 15;
         System.out.println("liczba | 15 = " + wynik);
-//
+
         // >> przesunięcie bitowe w prawo
         wynik = 4 >> 1;
         System.out.println("4 >> 1 = " + wynik);
@@ -65,23 +65,23 @@ public class Main {
 
 //        utworz Stringa "lubie placki" i zostaw z niego tylko placki
 //        składanie wielu stringów
-        String nieLadne = "brzydkie";
-        String wyrazenie = "slowo";
-
-        String wiadomosc = nieLadne + " " + wyrazenie;
-        System.out.println(wiadomosc);
+//        String nieLadne = "brzydkie";
+//        String wyrazenie = "slowo";
+//
+//        String wiadomosc = nieLadne + " " + wyrazenie;
+//        System.out.println(wiadomosc);
 //
 //        składanie stringa z nieStringiem
-        int wiek = 18;
-        String ania = "Ala";
+//        int wiek = 18;
+//        String ania = "Ala";
 
-        System.out.println(ania + " ma " + wiek + " lat ");
+//        System.out.println(ania + " ma " + wiek + " lat ");
 
 //        Znaki specjalne
-        System.out.println("Ala ma kota \"Mruczka\"");
+//        System.out.println("Ala ma kota \"Mruczka\"");
 //        System.out.println("Ala ma kota \\ \"Mruczka\" ");
 //        System.out.println("Ala ma kota \"Mruczka\"");
-        System.out.println("\tLubi myszy \nale bardziej spac");
+//        System.out.println("\tLubi myszy \nale bardziej spac");
 
 //        Ala ma kota
 //          a kot ma "Ale"
@@ -89,33 +89,33 @@ public class Main {
 //          Pusty łańcuch
 
 
-        String pusty = " ";
-
-        System.out.println(pusty.length() == 0);
-        System.out.println(pusty.isBlank());
+//        String pusty = " ";
+//
+//        System.out.println(pusty.length() == 0);
+//        System.out.println(pusty.isBlank());
 
 //        2. charAt
-        String witaj = "elo";
-        System.out.println(witaj);
+//        String witaj = "elo";
+//        System.out.println(witaj);
 //
-        char znak = witaj.charAt(1);
-        System.out.println(znak);
+//        char znak = witaj.charAt(1);
+//        System.out.println(znak);
 
-        String tekst = "Ala ma kota, a kot ma ale";
-        System.out.println(tekst.contains("ma"));
+//        String tekst = "Ala ma kota, a kot ma ale";
+//        System.out.println(tekst.contains("ma"));
+//
+//        int maIndex = tekst.indexOf("ma");
+//        System.out.println(maIndex);
+//
+//        int ilosc = 0;
+//
+//        while(tekst.contains("ma")) {
+//            ilosc++;
+//            int maIndex2 = tekst.indexOf("ma");
+//            tekst = tekst.substring(maIndex2 + 2);
+//        }
 
-        int maIndex = tekst.indexOf("ma");
-        System.out.println(maIndex);
-
-        int ilosc = 0;
-
-        while(tekst.contains("ma")) {
-            ilosc++;
-            int maIndex2 = tekst.indexOf("ma");
-            tekst = tekst.substring(maIndex2 + 2);
-        }
-
-        System.out.println(ilosc);
+//        System.out.println(ilosc);
 
 
 
@@ -164,23 +164,23 @@ public class Main {
 //        4. Wejście/wyjście I/O
 
 //      Wyjście
-//        System.out.println("No elo");
+        System.out.println("No elo");
 
 //      Wejście
-//        Scanner in = new Scanner(System.in);
-//        in.nextInt();
-//        in.nextDouble();
+        Scanner in = new Scanner(System.in);
+        System.out.println(in.nextInt());
+        System.out.println(in.nextDouble());
 
 //      5. Zapis i odczyt plików
 
 //        Odczyt
 
-//        File file = new File(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
-//        Scanner scanner = new Scanner(file);
-//
-//        while (scanner.hasNextLine()) {
-//            System.out.println(scanner.nextLine());
-//        }
+        File file = new File(System.getProperty("user.dir") + "/src/lekcja8/test.txt");
+        Scanner scanner = new Scanner(file);
+
+        while (scanner.hasNextLine()) {
+            System.out.println(scanner.nextLine());
+        }
 //
 //        System.out.println("=================");
 //        // A co to to getProperty?
@@ -191,9 +191,9 @@ public class Main {
 //        System.out.println(text);
 
 //         Zapis
-//        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
-//        fileWriter.append("Witaj Swiecie!");
-//        fileWriter.close();
+        FileWriter fileWriter = new FileWriter("src/lekcja8/test2.txt");
+        fileWriter.append("Witaj Swiecie!");
+        fileWriter.close();
 
 //        String milo = "Bardzo miło z Panstwem pracować!";
 //        Files.write(Path.of("src/lekcja5/test.txt"), milo.getBytes(), StandardOpenOption.APPEND);

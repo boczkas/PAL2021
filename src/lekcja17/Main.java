@@ -73,9 +73,9 @@ public class Main {
 //        Dołóżmy zwiększGlosnosc(aktualnaGlosnosc) do naszego Krzykacza
 
         Krzykacz.zwiekszGlosnosc(10);
-//        ania.nakrzycz(barylek);
-//
-//        ania.mowGlosno();
+        ania.nakrzycz(barylek);
+
+        ania.mowGlosno();
 //
 //        Co gdybyśmy chcieli do naszego interfejsu dołożyć metodę?
 //        Pojawia się problem, że musimy ją zaimplementować we wszystkich klasach implementujących

@@ -24,7 +24,7 @@ public class Main {
         zwierzeta.add(slon);
         zwierzeta.add(kot);
         zwierzeta.add(nowyKot);
-//
+
         //        Możemy mieć też metody abstrakcyjne, bo co to znaczy zwierze.dajGlos()? Skoro nie ma czegos takiego
 //        jak Zwierze
 
@@ -44,6 +44,9 @@ public class Main {
 //        protected - widoczność w pakiecie i wszystkich podklasach
 //        <default> - widoczność w obrębie pakietu
 //        private - widoczność w obrębie klasy
+
+//        Obywatel obywatel = new Obywatel();
+//        System.out.println(obywatel.imie);
 
 //        int a = 5;
 //        Integer b = 5;
@@ -72,16 +75,16 @@ public class Main {
 //        Stworzyć klasę w podpakiecie dziedziczącą po Pracownik'u
 
 //        4. equals()
-        Pracownik tomek = new Pracownik("Tomek", 100);
-        Pracownik staszek = new Pracownik("Staszek", 5);
-        boolean equals = tomek.equals(staszek);
-        System.out.println(equals);
+//        Pracownik tomek = new Pracownik("Tomek", 100);
+//        Pracownik staszek = new Pracownik("Staszek", 5);
+//        boolean equals = tomek.equals(staszek);
+//        System.out.println(equals);
 
 
         Pracownik marek = new Pracownik("Marek", 100);
         Pracownik tenSamMarek = new Pracownik("Marek", 100);
         System.out.println(marek.equals(tenSamMarek));
-//        System.out.println(tenSamMarek.equals(marek));
+        System.out.println(tenSamMarek.equals(marek));
 
 
 //        Domyślne zachowanie to sprawdzanie równości referencji
@@ -98,8 +101,8 @@ public class Main {
 
 //        5. hashCode() - powinna wyliczyć w miarę unikatową wartość dla obiektu. Pokazać jak nam wygenerowało
 //        6. toString() - nadpisać automatycznie, nadpisać z
-//        Pracownik tomek = new Pracownik("Tomek", 100);
-//        System.out.println(tomek.toString());
+        Pracownik tomek = new Pracownik("Tomek", 100);
+        System.out.println(tomek);
 
         System.out.println(tomek.toString());
 

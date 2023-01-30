@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.List;
 
 public class Generyki {
+//  Nie idę w to narazie
+
   public static void main(String[] args) {
     Koszyk koszyk = new Koszyk();
     List<Owoc> owoce = new ArrayList<>();
@@ -15,7 +17,7 @@ public class Generyki {
 
     Collection<Banan> banans = new ArrayList<>();
     banans.add(new Banan());
-    // koszyk.dodajJapkaIWyzej(banans); // - nie można. Nie ma relacji między bananem a japkiem
+//     koszyk.dodajJapkaIWyzej(banans); // - nie można. Nie ma relacji między bananem a japkiem
     koszyk.zjedzWszystko(banans); // można - banan rozszerza owoc
 
     Collection<Japko> japkos = new ArrayList<>();

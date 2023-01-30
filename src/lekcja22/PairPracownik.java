@@ -1,4 +1,4 @@
-package lekcja23;
+package lekcja22;
 
 import lekcja17.Pracownik;
 

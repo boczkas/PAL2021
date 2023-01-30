@@ -1,57 +1,53 @@
 package lekcja22;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import lekcja17.Pracownik;
 
 public class Main {
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) {
+//      1. Programowanie generyczne
+//    Chcielibyśmy zrobić pary różnych typów
+      PairString pairString = new PairString("Pierwszy", "Drugi");
+      PairInteger pairInteger = new PairInteger(1, 2);
+      PairPracownik pairPracownik = new PairPracownik(new Pracownik("Pierwszy", 1), new Pracownik("Drugi", 2));
 
-//      Obsługa wielu wyjątków
-    try {
-      rzucamWyjatek1();
-      throw new Wyjatek2();
-    } catch (Wyjatek1 wyjatek1) {
-      System.out.println("Polecial wyjatek 1");
-    } catch (Wyjatek2 wyjatek2) {
-      System.out.println("Polecial wyjatek 2");
-    }
+//       Jak to rozwiązać żeby nie trzeba było tworzyć tylu osobnych klas na każdy typ?
+//      - Object
+      PairObject pairObjectString = new PairObject("Pierwszy", "Drugi");
+      PairObject pairObjectInteger = new PairObject(1, 2);
+      PairObject pairObjectPracownik = new PairObject(new Pracownik("Pierwszy", 1),
+              new Pracownik("Drugi", 2));
 
-      try {
-          rzucamWyjatek1();
-          throw new Wyjatek2();
-      } catch (Wyjatek1 | Wyjatek2 wyjatek) {
-          System.out.println("Polecial wyjatek");
-      }
+      pairObjectString.first = "first";
+      pairObjectString.second = 2;
 
-    //      finally
-    try {
-      rzucamWyjatek1();
-      throw new Wyjatek2();
-    } catch (Wyjatek1 | Wyjatek2 wyjatek) {
-      System.out.println("Polecial wyjatek, czy to koniec?");
-    } finally {
-      System.out.println("A ja i tak sie wyswietle");
-    }
+//      Tu nadal wszystko działa, a przecież chcieliśmy przechowywać sobie parę dwóch Stringów. Jak żyć?
+//     - Generyczna klasa
+      Pair<String> stringPair = new Pair<>("Pierwszy", "Drugi");
+      stringPair.first = "first";
+//      stringPair.second = 2;
 
-//    try with resources
-      BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/src/lekcja22/plik.txt"));
-      try {
-        System.out.println(br.readLine());
-      } catch (IOException e) {
-          e.printStackTrace();
-      } finally {
-          br.close();
-      }
+//      To już nam nie zadziała - uzyskaliśmy kontrolę typów i możliwość używania dowolnego typu parametrów
 
-      try (br) {
-          System.out.println(br.readLine());
-      } catch (IOException e) {
-          e.printStackTrace();
-      }
+//     - Klasa z dwoma różnymi typami, coś jak mapa
+      DoubleTypesPair<String, Integer> doubleTypesPair = new DoubleTypesPair<>("Imie", 2);
+      doubleTypesPair.first = "Siema";
+      doubleTypesPair.second = 8;
+
+//     - Metoda generyczna
+      String[] strings = {"a", "b", "c"};
+      String middleString = getMiddle(strings);
+      System.out.println(middleString);
+
+      Integer[] integers = {1, 2, 3};
+      Integer middleInteger = getMiddle(integers);
+
+    System.out.println(middleInteger);
   }
 
-  static void rzucamWyjatek1() throws Wyjatek1 {
-      throw new Wyjatek1();
-  }
+    //      - Metoda generyczna
+
+    public static <T> T getMiddle(T[] elements) {
+      return elements[elements.length / 2];
+    }
+
 }
