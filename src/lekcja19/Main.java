@@ -34,14 +34,17 @@ public class Main {
 
         psiWyswietlacz(starePsiaki2);
 
+        Krzykacz polski = new PolskiKrzykacz();
+        polski.krzycz();
 
-
-        Krzykacz krzykacz = () -> System.out.println("AAAAAAAAAAAAA!!!!");
+        Krzykacz krzykacz = () -> {
+            System.out.println("AAAAAAAAAAAAA!!!!");
+            System.out.println("BBBBBBB!!!!");
+        };
 
         krzykacz.krzycz();
 
-        Krzykacz polski = new PolskiKrzykacz();
-        polski.krzycz();
+
 
         Krzykacz angielski = () -> System.out.println("You son of a b...");
         Krzykacz niemiecki = () -> System.out.println("Krzycze po niemiecku");
@@ -57,6 +60,11 @@ public class Main {
         for (Krzykacz krzykacz1 : krzykacze) {
             krzykacz1.krzycz();
         }
+
+//        Stworz interfejs funkcyjny Krzykacz i ma krzyczec na dzieci
+//        Jeden ma krzyczeć na Eryka, drugi na Maksa (jak macie swoje dzieci to możecie podać
+//        tu ich imiona)
+
 //    Podejście klasyczne
 
 //    filter w streamie
@@ -64,22 +72,22 @@ public class Main {
 
 //    2. Mamy liste psow, chcemy na jej podstawie stworzyc liste, w której sa tylko nie powtarzajace sie psy
 
-        List<Pies> unikatowe = new ArrayList<>();
-
-        for (Pies pies : psiaki) {
-            if (!unikatowe.contains(pies)) {
-                if (pies.getWiek() < 5) {
-                    unikatowe.add(pies);
-                }
-            }
-        }
-
-        psiWyswietlacz(unikatowe);
-
-        Stream<Pies> unikatowyPiesStream = psiaki.stream()
-                .filter(pies -> pies.getWiek() < 5)
-                .distinct();
-
+//        List<Pies> unikatowe = new ArrayList<>();
+//
+//        for (Pies pies : psiaki) {
+//            if (!unikatowe.contains(pies)) {
+//                if (pies.getWiek() < 5) {
+//                    unikatowe.add(pies);
+//                }
+//            }
+//        }
+//
+//        psiWyswietlacz(unikatowe);
+//
+//        Stream<Pies> unikatowyPiesStream = psiaki.stream()
+//                .filter(pies -> pies.getWiek() < 5)
+//                .distinct();
+//
 //        List<Pies> unikatowe2 = unikatowyPiesStream
 //                .collect(Collectors.toList());
 //        psiWyswietlacz(unikatowe2);
@@ -89,21 +97,21 @@ public class Main {
 
     //    3. Mamy liste psow, chcemy policzyc ile mamy niepowtarzalnych psow
 
-        List<Pies> unikatowe3 = new ArrayList<>();
-
-        for (Pies pies : psiaki) {
-            if (!unikatowe3.contains(pies)) {
-                if (pies.getWiek() < 5) {
-                    unikatowe3.add(pies);
-                }
-            }
-        }
-
-        System.out.println(unikatowe3.size());
-
-        long count = unikatowyPiesStream
-                .count();
-        System.out.println(count);
+//        List<Pies> unikatowe3 = new ArrayList<>();
+//
+//        for (Pies pies : psiaki) {
+//            if (!unikatowe3.contains(pies)) {
+//                if (pies.getWiek() < 5) {
+//                    unikatowe3.add(pies);
+//                }
+//            }
+//        }
+//
+//        System.out.println(unikatowe3.size());
+//
+//        long count = unikatowyPiesStream
+//                .count();
+//        System.out.println(count);
 //        Klasyczne podejście
 //        count w streamie
 
@@ -111,15 +119,22 @@ public class Main {
 //        Podejscie klasyczne
 //        max w stream
 
-        Pies najstarszy = new Pies("a", 0);
+//        To ja musze pokazac
 
-        for (Pies pies : psiaki) {
-            if (pies.getWiek() > najstarszy.getWiek()) {
-                najstarszy = pies;
-            }
-        }
 
-        System.out.println(najstarszy);
+//        Pies najstarszy = new Pies("a", 0);
+//
+//        for (Pies pies : psiaki) {
+//            if (pies.getWiek() > najstarszy.getWiek()) {
+//                najstarszy = pies;
+//            }
+//        }
+//
+        Pies pies = psiaki.stream()
+                .max((pies1, pies2) -> pies1.getWiek() - pies2.getWiek())
+                .get();
+
+        System.out.println(pies);
 
 //    5. Mamy liste psow, chcemy z niej zrobić liste kotow o tym samym imieniu, ale tylko tych ktore
 //    sa starsze niz 2 lata
@@ -127,18 +142,22 @@ public class Main {
 //        Podejscie klasyczne
 //        map w streamie
 
-        List<Kot> koty = new ArrayList<>();
-        for (Pies pies : psiaki) {
-            koty.add(new Kot(pies.getImie()));
-        }
+//        List<Kot> koty = new ArrayList<>();
+//        for (Pies pies : psiaki) {
+//            koty.add(new Kot(pies.getImie()));
+//        }
 
-        kociWyswietlacz(koty);
-
-        List<Kot> koty2 = psiaki.stream()
-                .map(element -> new Kot(element.getImie()))
+        List<Kot> kot = psiaki.stream()
+                .map(pies1 -> new Kot(pies1.getImie()))
                 .collect(Collectors.toList());
 
-        kociWyswietlacz(koty2);
+//        kociWyswietlacz(koty);
+//
+//        List<Kot> koty2 = psiaki.stream()
+//                .map(element -> new Kot(element.getImie()))
+//                .collect(Collectors.toList());
+//
+//        kociWyswietlacz(koty2);
     }
 
     private static void psiWyswietlacz(List<Pies> psy) {

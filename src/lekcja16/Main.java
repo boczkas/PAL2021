@@ -1,5 +1,7 @@
 package lekcja16;
 
+import lekcja19.Pies;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -39,6 +41,12 @@ public class Main {
         for(Field pole : aClass.getDeclaredFields()) {
             System.out.println(pole);
         }
+
+//
+//
+//      PRZEROBIĆ WYJĄTKI TAK, ŻEBY ZACZĄĆ OD TWORZENIA WŁASNYCH
+//
+//
 
 //        3. Podstawy przechwytywanie wyjątków
 //          Co to jest wyjątek? Nieoczekiwane zachowanie programu. Możemy go obsłużyć, tak, aby program nie zdechł.
@@ -83,18 +91,19 @@ public class Main {
 
 
 //        System.out.println("Podaj liczbe");
-//        next = scanner.next();
-//
-//        if (next.matches("[0-9]+")) {
-//            System.out.println("To liczba");
-//        } else {
-//            System.out.println("To nie liczba");
-//        }
+        next = scanner.next();
+
+        if (next.matches("[0-9]+")) {
+            System.out.println("To liczba");
+        } else {
+            System.out.println("To nie liczba");
+        }
 
 //        Pokazać przykłady
 //        Napisać do okoła tego ładnego try/catcha
 
 //        4. Porady projektowe dotyczące dziedziczenia
+//          - nie używaj
 //          - wspólne metody i pola umieszczaj w nadklasach
 //          - dziedziczenia używaj do określania relacji typu JEST
 //          - nie używaj dziedziczenia jeśli któraś z metod nie działa poprawnie (Kot dziedziczący po Psie)

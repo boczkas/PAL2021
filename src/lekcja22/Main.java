@@ -2,6 +2,11 @@ package lekcja22;
 
 import lekcja17.Pracownik;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class Main {
   public static void main(String[] args) {
 //      1. Programowanie generyczne
@@ -24,6 +29,8 @@ public class Main {
 //     - Generyczna klasa
       Pair<String> stringPair = new Pair<>("Pierwszy", "Drugi");
       stringPair.first = "first";
+      List<String> lista = new ArrayList<>();
+      Set<String> set = new HashSet<>();
 //      stringPair.second = 2;
 
 //      To już nam nie zadziała - uzyskaliśmy kontrolę typów i możliwość używania dowolnego typu parametrów

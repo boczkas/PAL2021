@@ -6,6 +6,11 @@ public interface Krzykacz {
         System.out.println(glosnosc + 10);
     }
     void wydajDzwiek();
+
+    default void siema() {
+        System.out.println("Siema Krzykacza");
+    }
+
     default void krzycz() {
         throw new UnsupportedOperationException();
     }

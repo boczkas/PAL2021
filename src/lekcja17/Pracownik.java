@@ -34,6 +34,11 @@ public class Pracownik implements Comparable<Pracownik>, Krzykacz, Wulgarnik {
     }
 
     @Override
+    public void siema() {
+        System.out.println("Siema pracownika");
+    }
+
+    @Override
     public void krzycz() {
         System.out.println("Krzycze po pracowniczemu");
     }

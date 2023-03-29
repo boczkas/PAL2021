@@ -9,4 +9,8 @@ public interface Wulgarnik {
     default void mowGlosno() {
         System.out.println("Mowie glosno!");
     }
+
+    default void siema() {
+        System.out.println("Siema Wulgarnika");
+    }
 }

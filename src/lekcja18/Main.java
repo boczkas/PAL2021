@@ -29,17 +29,17 @@ public class Main {
 //        Stworz Set psów i wypisz je wszystkie
 //        "Burek", "Reks", "Azor"
 
-        Set<Pies> psy = new HashSet<>();
-
-        psy.add(new Pies("Burek"));
-        psy.add(new Pies("Reks"));
-        psy.add(new Pies("Azor"));
-
-        psy.add(new Pies("Azor"));
-
-        for (Pies pies : psy) {
-            System.out.println(pies);
-        }
+//        Set<Pies> psy = new HashSet<>();
+//
+//        psy.add(new Pies("Burek"));
+//        psy.add(new Pies("Reks"));
+//        psy.add(new Pies("Azor"));
+//
+//        psy.add(new Pies("Azor"));
+//
+//        for (Pies pies : psy) {
+//            System.out.println(pies);
+//        }
 //        Dodaj kolejnego psa i sprawdz czy sie nie powtorzy
 
 
@@ -51,7 +51,7 @@ public class Main {
         imieIWiek.put("Jan", 26);
         imieIWiek.put("Jozek", 15);
 
-//        imieIWiek.put("Przemek", 32);
+        imieIWiek.put("Przemek", 32);
 
 //        Iterowanie przez mape
 //        1. Wyciagniecie wszystkich kluczy
@@ -66,13 +66,13 @@ public class Main {
         }
 
         System.out.println(imieIWiek.get("Przemek"));
-
-        Map<Pies, Integer> piesIWiek = new HashMap<>();
-        piesIWiek.put(new Pies("Azor"), 2);
-        piesIWiek.put(new Pies("Burek"), 4);
-        piesIWiek.put(new Pies("Reks"), 6);
-
-        System.out.println(piesIWiek.get(new Pies("Azor")));
+//
+//        Map<Pies, Integer> piesIWiek = new HashMap<>();
+//        piesIWiek.put(new Pies("Azor"), 2);
+//        piesIWiek.put(new Pies("Burek"), 4);
+//        piesIWiek.put(new Pies("Reks"), 6);
+//
+//        System.out.println(piesIWiek.get(new Pies("Azor")));
 //
 //        Map<Integer, Osoba> peseleIOsoby = new HashMap<>();
 //        peseleIOsoby.put(123456789, new Osoba("Jan", "Kowalski"));

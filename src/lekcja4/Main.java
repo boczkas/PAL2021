@@ -113,6 +113,10 @@ public class Main {
 //        System.out.println("No elo");
 
 //      Wejście
+
+//        Zwrócić uwagę na to, że trzeba zrobić import
+
+
 //        Scanner in = new Scanner(System.in);
 //        System.out.println("Podaj zmienna1");
 //        int zmienna1 = in.nextInt();

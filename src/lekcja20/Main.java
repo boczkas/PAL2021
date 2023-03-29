@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-    //    Stwórz interfejs ekspresu do kawy.
+//    Stwórz interfejs ekspresu do kawy.
 //    1. Ekspres ma uruchamiać się w stanie domyślnym (składniki uzupełnione do maksimum),
 //    gdzie ma w sobie:
 //      - 10 jednostek kawy

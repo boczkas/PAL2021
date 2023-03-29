@@ -8,7 +8,7 @@ public class Main {
 //      Mieliśmy dane na wejściu -> wymyślaliśmy algorytm -> dane na wyjściu
 //    Tak się programowało jakieś 30 lat temu ;)
 
-//    Pomyślmy jak zbudować program strukturalny obsługujący taką stronkę:
+//    Pomyślmy jak zbudować program proceduralny obsługujący taką stronkę:
 //    https://www.onet.pl/
 //    Trochę linii do obsługi każdej ikonki, przycisku, wyświetlenia by było
 
@@ -18,7 +18,7 @@ public class Main {
 //    Jest to szablon - pokazówka
 //    Konstruując obiekt tworzymy egzemplarz (instancję) danej klasy
 //    Biblioteka Javy ma mnóstwo swoich klas wbudowanych do obsługi dat, tekstu, kolekcji danych, ale nadal
-//    konieczna jest kostrukcja własnych klas dostosowanych do dziedziny problemu, który rozwiązujemy
+//    konieczna jest konstrukcja własnych klas dostosowanych do dziedziny problemu, który rozwiązujemy
 
 //    Zróbmy klasę Kot. Ma imię i wiek.
 //    Jak dostać się do pól kota?
@@ -41,10 +41,10 @@ public class Main {
         System.out.println(mruczek.imie);
         System.out.println(mruczek.wiek);
 
-        Kot miauczek = new Kot();
-        miauczek.imie = "Miauczek";
-        miauczek.wiek = 4;
-        miauczek.miaucz("Eryk");
+//        Kot miauczek = new Kot();
+//        miauczek.imie = "Miauczek";
+//        miauczek.wiek = 4;
+//        miauczek.miaucz("Eryk");
 
 
 //        Arbuz fioletowyArbuz = new Arbuz();
