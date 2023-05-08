@@ -20,8 +20,7 @@ public class Main {
 //              -   klasa Pies implementująca Krzykacz
 //              -   klasa Trabka implementujaca Krzykacz
 //
-        List<Krzykacz> krzykacze = List.of(new Pies(), new Kot(), new Trabka(),
-                new Pracownik("Ania", 100000));
+        List<Krzykacz> krzykacze = List.of(new Pies(), new Kot(), new Trabka());
 
         for(Krzykacz krzykacz : krzykacze) {
             krzykacz.wydajDzwiek();

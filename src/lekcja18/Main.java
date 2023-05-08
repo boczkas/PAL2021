@@ -56,6 +56,7 @@ public class Main {
 //        Iterowanie przez mape
 //        1. Wyciagniecie wszystkich kluczy
 
+//        ZROBIC FORA NA ZASADZIE KLUCZ -> WARTOSC I MA SIE TO WYPISYWAC JAKO PARA
 
         for(String klucz : imieIWiek.keySet()) {
             System.out.println(klucz);
@@ -68,6 +69,7 @@ public class Main {
         System.out.println(imieIWiek.get("Przemek"));
 //
 //        Map<Pies, Integer> piesIWiek = new HashMap<>();
+//        !!! Najpierw powkładać do mapy obiekty które zapisze w zmiennych !!!
 //        piesIWiek.put(new Pies("Azor"), 2);
 //        piesIWiek.put(new Pies("Burek"), 4);
 //        piesIWiek.put(new Pies("Reks"), 6);
@@ -83,6 +85,7 @@ public class Main {
 //        Dodaj do niej 3 Psy o imionach: "Burek", "Reks", "Azor"
 //        Wartościami sa Osoby o imionach: "Artur", "Karol", "Staszek"
 //        Wyciągnij wszyskie klucze
+//        Wyciągnij wszystkie wartości ze swojej mapy
 
 //        2. Wyciąganie pojedynczej wartości
 //        System.out.println(imieIWiek.get("Jan"));
