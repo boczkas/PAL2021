@@ -7,6 +7,8 @@ import java.util.stream.Stream;
 
 public class Main {
 
+//    DO ROZBICIA NA 2 - Interfejsy z lambdami i streamy
+
     public static void main(String[] args) {
         List<Pies> psiaki = new ArrayList<>();
         psiaki.add(new Pies("Burek", 3));
@@ -72,15 +74,15 @@ public class Main {
 
 //    2. Mamy liste psow, chcemy na jej podstawie stworzyc liste, w której sa tylko nie powtarzajace sie psy
 
-//        List<Pies> unikatowe = new ArrayList<>();
-//
-//        for (Pies pies : psiaki) {
-//            if (!unikatowe.contains(pies)) {
-//                if (pies.getWiek() < 5) {
-//                    unikatowe.add(pies);
-//                }
-//            }
-//        }
+        List<Pies> unikatowe = new ArrayList<>();
+
+        for (Pies pies : psiaki) {
+            if (!unikatowe.contains(pies)) {
+                if (pies.getWiek() < 5) {
+                    unikatowe.add(pies);
+                }
+            }
+        }
 //
 //        psiWyswietlacz(unikatowe);
 //
