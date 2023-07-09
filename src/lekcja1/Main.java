@@ -1,11 +1,6 @@
 package lekcja1;
 
 
-// Link do naszej grupy na fejsbuku:
-// https://www.facebook.com/groups/341336703767496/
-
-
-
 
 public class Main {
     public static void main(String[] args) {
