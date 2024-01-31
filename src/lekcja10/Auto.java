@@ -7,6 +7,7 @@ public class Auto {
     static int iloscAut;
 
     public Auto() {
+        iloscAut++;
     }
 
     public Auto(String marka, int poziomPaliwa) {

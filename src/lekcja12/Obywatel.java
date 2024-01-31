@@ -41,6 +41,12 @@ public class Obywatel {
         this.pocketMoney = 0;
     }
 
+    public Obywatel(double pocketMoWney) {
+        this.name = "";
+        this.dateOfBirth = LocalDate.of(0, 0, 0);
+        this.pocketMoney = pocketMoney;
+    }
+
     public String getName() {
         return name;
     }
@@ -61,7 +67,10 @@ public class Obywatel {
         System.out.println(this.name + ": " + this.pocketMoney);
     }
 
-    public void increasePocketMoney(int procent) {
-        this.pocketMoney += this.pocketMoney * 0.01 * procent;
+    public void increasePocketMoney(int kwota) {
+        if (kwota > 10) {
+            System.out.println("Obywatel dupa1");
+            this.pocketMoney += kwota;
+        }
     }
 }

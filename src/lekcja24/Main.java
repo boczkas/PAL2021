@@ -1,9 +1,6 @@
 package lekcja24;
 
 
-import lekcja14.Pracownik;
-import lekcja14.obywatel.Manager;
-import lekcja14.obywatel.Obywatel;
 import lekcja22.Pair;
 
 import java.util.ArrayList;
@@ -11,6 +8,8 @@ import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
+//    TEGO NIE ROBIC - JEDZIEMY ZE SPRINGIEM
+
 //    Metody generyczne
     String[] strings = {"a", "b", "c"};
     System.out.println(getMiddle(strings));

@@ -1,6 +1,5 @@
 package lekcja2;
 
-import lekcja14.Kot;
 
 public class Main {
     public static void main(String[] args) {

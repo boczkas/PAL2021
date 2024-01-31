@@ -15,32 +15,32 @@ public class Main {
 
 //          2. Rzutowanie (konwersja stratna)
 
-//        liczbaDouble = 3.999;
+        liczbaDouble = 3.999;
 //        liczbaInt = liczbaDouble;
 
-//        liczbaInt = (int) liczbaDouble;
-//        System.out.println(liczbaInt);
+        liczbaInt = (int) liczbaDouble;
+        System.out.println(liczbaInt);
 
-//        liczbaInt = 300;
-//        byte liczbaByte = (byte) liczbaInt;
-//
-//        System.out.println(liczbaByte);
+        liczbaInt = 300;
+        byte liczbaByte = (byte) liczbaInt;
+
+        System.out.println(liczbaByte);
 //
 //
 //          3. Operatory z przypisaniem
 
-//        int x = 0;
-//
-//        x = x + 5;
-//        System.out.println(x);
-//
-//        x += 1;
-//        System.out.println(x);
-//
-//        x *= 2;
-//        System.out.println(x);
-//
-//
+        int x = 0;
+
+        x = x + 5;
+        System.out.println(x);
+
+        x += 1;
+        System.out.println(x);
+
+        x *= 2;
+        System.out.println(x);
+
+
 //          4. Operatory inkrementacji i dekrementacji
 //
 //        int i = 0;
@@ -63,27 +63,27 @@ public class Main {
 //
 //        int m = 7;
 //        int n = 7;
-
+//
 //        int a = 2 * ++m;
 //        int b = 2 * n++;
-
+//
 //        System.out.println("m = " + m);
 //        System.out.println("n = " + n);
 //        System.out.println("a = " + a);
 //        System.out.println("b = " + b);
-//
-//
+
+
 //          5. Operatory relacyjne i logiczne
 //
-//        System.out.println( "3 == 7 " + (3 == 7));
-//        System.out.println( "3 != 7 " + (3 != 7));
-//        System.out.println( "3 > 7 " + (3 > 7));
-//        System.out.println( "3 >= 7 " + (3 >= 7));
-//        System.out.println( "3 <= 7 " + (3 <= 7));
-//        System.out.println("!true " + (!true));
-
-//        System.out.println("true || false " + (true || false));
-//        System.out.println("true && false " + (true && false));
+        System.out.println( "3 == 7 " + (3 == 7));
+        System.out.println( "3 != 7 " + (3 != 7));
+        System.out.println( "3 > 7 " + (3 > 7));
+        System.out.println( "3 >= 7 " + (3 >= 7));
+        System.out.println( "3 <= 7 " + (3 <= 7));
+        System.out.println("!true " + (!true));
+//
+        System.out.println("true || false " + (true || false));
+        System.out.println("true && false " + (true && false));
 //
 //          TROCHĘ SIĘ WCINAM Z PĘTLAMI - w książce inaczej, po to żeby robić zadanka
 //        6. Pętla while()
@@ -96,6 +96,12 @@ public class Main {
             i++;
         }
 //        Wypisz liczby od 10 do 0;
+
+        i = 10;
+        while (i >= 0) {
+            System.out.println("i = " + i);
+            i--;
+        }
 
 //        7. Pętla for()
 //        for(inicjalizacja; warunek_zakonczenia; co_robimy_co_obieg) {
@@ -110,21 +116,23 @@ public class Main {
 //        8. Wejście/wyjście I/O
 
 //      Wyjście
-//        System.out.println("No elo");
+        System.out.println("No elo");
 
 //      Wejście
 
 //        Zwrócić uwagę na to, że trzeba zrobić import
 
 
-//        Scanner in = new Scanner(System.in);
-//        System.out.println("Podaj zmienna1");
-//        int zmienna1 = in.nextInt();
-//        System.out.println("Podaj zmienna2");
-//        double zmienna2 = in.nextDouble();
-//
-//        System.out.println(zmienna1);
-//        System.out.println(zmienna2);
+        Scanner in = new Scanner(System.in);
+        System.out.println("Podaj zmienna1");
+        int zmienna1 = in.nextInt();
+        String s = in.nextLine();
+        System.out.println("s" + s);
+        System.out.println("Podaj zmienna2");
+        double zmienna2 = in.nextDouble();
+
+        System.out.println(zmienna1);
+        System.out.println(zmienna2);
 
     }
 }

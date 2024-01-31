@@ -20,11 +20,31 @@ public class Main {
 //              -   klasa Pies implementująca Krzykacz
 //              -   klasa Trabka implementujaca Krzykacz
 //
-        List<Krzykacz> krzykacze = List.of(new Pies(), new Kot(), new Trabka());
+        Dziecko dziecko = new Dziecko();
+        Perkusja perkusja = new Perkusja();
+        Slon slon = new Slon();
 
-        for(Krzykacz krzykacz : krzykacze) {
-            krzykacz.wydajDzwiek();
+        List<Wolacz> wolacze = new ArrayList<>();
+        wolacze.add(dziecko);
+        wolacze.add(perkusja);
+        wolacze.add(slon);
+
+        for (Wolacz wolacz : wolacze) {
+            wolacz.wydajDzwiek();
         }
+
+        Wolacz wolacz = new Wolacz() {
+            @Override
+            public void wydajDzwiek() {
+                System.out.println("wolam!");
+            }
+        };
+        wolacz.wydajDzwiek();
+        List<Krzykacz> krzykacze = List.of(new Pies(), new Kot(), new Trabka());
+//
+//        for(Krzykacz krzykacz : krzykacze) {
+//            krzykacz.wydajDzwiek();
+//        }
 
 
 //        Krzykacz krzykacz = new Krzykacz() {
@@ -34,7 +54,7 @@ public class Main {
 //            }
 //        };
 //
-        Krzykacz krzykacz1 = new Pracownik("lala", 10);
+//        Krzykacz krzykacz1 = new Pracownik("lala", 10);
         System.out.println(Krzykacz.a);
 
 //
@@ -43,27 +63,12 @@ public class Main {
 //        W interfejsach możemy mieć pola, ale są to tak naprawdę stałe, bo są one public static final
 //        Nie możemy tworzyć instancji interfejsu.
 
-//        Klasa Pracownik i sortowanie obiektów tego typu po wypłacie
-//        Chcielibyśmy skorzystać z metody Arrays.sort() (Niekoniecznie tak się to teraz robi, ale to
-//        tylko przykład)]
         Pracownik nikoletta = new Pracownik("Nikoletta", 0);
         Pracownik ania = new Pracownik("Ania", 1000000);
         Pracownik przemek = new Pracownik("Przemek", 5000);
         Pracownik barylek = new Pracownik("Baryłek", 20000);
 
         przemek.siema();
-
-        Pracownik[] pracownicy = {nikoletta, ania, przemek, barylek};
-
-        for(var pracownik : pracownicy) {
-            System.out.println(pracownik);
-        }
-
-        Arrays.sort(pracownicy);
-        System.out.println("============================");
-        for(var pracownik : pracownicy) {
-            System.out.println(pracownik);
-        }
 
 //        Można implementować kilka interfejsów. Niech Pracownik implementuje Krzykacza
 
@@ -74,7 +79,7 @@ public class Main {
 //        Dołóżmy zwiększGlosnosc(aktualnaGlosnosc) do naszego Krzykacza
 
         Krzykacz.zwiekszGlosnosc(10);
-//        ania.nakrzycz(barylek);
+        ania.nakrzycz(barylek);
 //
 //        ania.mowGlosno();
 //

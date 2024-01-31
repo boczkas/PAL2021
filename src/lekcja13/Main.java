@@ -2,6 +2,7 @@ package lekcja13;
 
 
 import lekcja13.dom.Osoba;
+import lekcja13.firma.Obywatel;
 import lekcja13.zwierzaki.SpiacyPies;
 import lekcja13.zwierzaki.SzkolonyPies;
 import lekcja13.zwierzaki.Pies;
@@ -25,6 +26,9 @@ public class Main {
 
         Osoba domowaOsoba = new Osoba();
         String tekst = "cos";
+
+        Obywatel obywatel = new Obywatel("Staszek");
+        obywatel.siema();
 
 //        lekcja13.firma.Osoba firmowaOsoba = new lekcja13.firma.Osoba();
 
@@ -59,13 +63,17 @@ public class Main {
 
         Pies pies = new Pies("Staszek", 45);
         pies.sayHello();
-        SpiacyPies spiacyPies = new SpiacyPies("Edek", 5);
-        spiacyPies.sayHello();
-
+//        SpiacyPies spiacyPies = new SpiacyPies("Edek", 5);
+//        spiacyPies.sayHello();
+//
         SzkolonyPies szkolonyPies = new SzkolonyPies("Niezwkly", 100, "maluje");
 //
 //        pies.sayHello();
         szkolonyPies.sayHello();
+        szkolonyPies.robSztuczki();
+
+        Pies psiak = new SzkolonyPies("Aniol", 0, "latam");
+        psiak.sayHello();
 //        Klasa Pies ma dysponować metodą sayHello(), w której pies wita się swoim imieniem i wiekiem.
 //        Klasa SzkolonyPies ma nadpisywać metodę sayHello(), tak aby witał się imieniem, wiekiem oraz umiejętnością.
 
@@ -74,22 +82,26 @@ public class Main {
 
 //        Dodać klasę SpiacyPies, który w hello() odpowiada, że nie ma siły gadać.
 //
-//        SpiacyPies spiacyPies = new SpiacyPies("Spiacy", 30);
-//        spiacyPies.sayHello();
+        SpiacyPies spiacyPies = new SpiacyPies("Spiacy", 30);
+        spiacyPies.sayHello();
 //        System.out.println(spiacyPies);
-//        List<Pies> mieszkancyWioski = new ArrayList<>();
-//        mieszkancyWioski.add(pies);
-//        mieszkancyWioski.add(szkolonyPies);
-//        mieszkancyWioski.add(spiacyPies);
-//
-//        System.out.println("------------------------");
-//        for (Pies mieszkaniec : mieszkancyWioski) {
-//            mieszkaniec.sayHello();
-//        }
+        List<Pies> mieszkancyWioski = new ArrayList<>();
+        mieszkancyWioski.add(pies);
+        mieszkancyWioski.add(szkolonyPies);
+        mieszkancyWioski.add(spiacyPies);
+        mieszkancyWioski.add(psiak);
+
+        System.out.println("------------------------");
+        for (Pies mieszkaniec : mieszkancyWioski) {
+            mieszkaniec.sayHello();
+        }
 
 
 //        CO TO POLIMORFIZM?
 //        Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
 //        Polimofizm oznacza, że możemy w miejsce klasy bazowej podstawić dowolny element z klasy dziedziczącej.
+
+        SzkolonyPies szkolonyPies1 = new SzkolonyPies("imie", 1, "skill");
+        szkolonyPies1.skacz();
     }
 }

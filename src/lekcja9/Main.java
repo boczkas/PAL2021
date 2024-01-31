@@ -34,12 +34,18 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Kot mruczek = new Kot();
-        mruczek.imie = "Mruczek";
-        mruczek.wiek = 4;
+//        Kot mruczek = new Kot();
+//        mruczek.imie = "Mruczek";
+//        mruczek.wiek = 4;
+//
+//        System.out.println(mruczek.imie);
+//        System.out.println(mruczek.wiek);
+//
+//        mruczek.miaucz("Przemek");
+//        Robak staszek = new Robak();
+//        staszek.imie = "Staszka";
+//        mruczek.jedz(staszek);
 
-        System.out.println(mruczek.imie);
-        System.out.println(mruczek.wiek);
 
 //        Kot miauczek = new Kot();
 //        miauczek.imie = "Miauczek";
@@ -58,6 +64,9 @@ public class Main {
 //        mruczek.przedstawSie();
 //        mruczek.przywitajSie("Przemek");
 //        mruczek.skakaj();
+
+//        Nasz Kot łapie Robaka,
+//        napisz metodę przywitajRobaka() w Kot, która wypisze "O kurde, złapałem robaka, o imieniu " ...
 
         Samochod stilo = new Samochod();
         stilo.odpal();

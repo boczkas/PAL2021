@@ -20,8 +20,7 @@ public class Main {
             System.out.println("Dzis jest niedziela");
         }
 
-        Zwierze zwierze = new Kot("a", 2);
-
+//        Zrobcie enuma do miesiaca
         Miesiac miesiac = Miesiac.LUTY;
 
         if (miesiac == Miesiac.LUTY) {

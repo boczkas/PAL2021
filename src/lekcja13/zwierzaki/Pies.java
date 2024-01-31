@@ -13,4 +13,8 @@ public class Pies {
         System.out.println("Siema jestem " + name + " i mam " + age + " lat.");
     }
 
+    public void skacz() {
+        System.out.println("Skacze sobie");
+    }
+
 }

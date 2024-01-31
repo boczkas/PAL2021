@@ -1,6 +1,5 @@
 package lekcja15;
 
-import lekcja14.Pracownik;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
 //        1. Wstawianie do tablicy
 //          Deklaracja tablicy
+        int[] liczby = {1,2,3,4};
         Zwierze[] tablica = new Zwierze[10];
         tablica[0] = new Pies("Burek");
         tablica[1] = new Kot("Staszek");
@@ -25,12 +25,6 @@ public class Main {
         lista.add(new Kot("Mruczek"));
         lista.add(new Kot("Miauczek"));
 
-        //        Java 11
-        var zwierzetaArrayList = new ArrayList<Zwierze>();
-
-        var osiem = 8;
-
-        var scanner = new Scanner(System.in);
 
 //        3. Dostęp do elementów tablicy
         System.out.println("tablica element 0 " + tablica[0]);
@@ -65,13 +59,13 @@ public class Main {
 
         System.out.println("======================");
 
-// //        6. Usuwanie elementów z listy
+ //        6. Usuwanie elementów z listy
         kociaki.remove(1);
 
         for (Kot kociak : kociaki) {
             System.out.println(kociak);
         }
-
+//
         System.out.println("======================");
         kociaki.remove(new Kot("Mruczek"));
 
@@ -96,8 +90,17 @@ public class Main {
 //  //      Metoda asList
         List<Pies> psy1 = Arrays.asList(new Pies("Burek"), new Pies("Reks"));
         List<Pies> psy2 = Arrays.asList(new Pies("Burek"), new Pies("Reks"), new Pies("Staszek"));
+
 //
 //
+
+        //        Java 11
+        var zwierzetaArrayList = new ArrayList<Zwierze>();
+
+        var osiem = 8;
+
+        var scanner = new Scanner(System.in);
+
         wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"), new Kot("Mruczek"));
         wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"));
         wyswietlKoty(new Kot("Staszek"), new Kot("Jozek"), new Kot("Jozek"), new Kot("Jozek"));

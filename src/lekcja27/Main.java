@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.time.Instant;
 
 public class Main {
+//  TEGO NIE ROB W SALI, IDZ DO LEKCJI 29
+
   //    1. Wątek a proces?
   //      Proces może wiele wątków. Wątki współdzielą zestaw zmiennych. Wada - mogą sobie
   // wchodzić w paradę.

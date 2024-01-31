@@ -9,6 +9,9 @@ import java.util.Set;
 
 public class Main {
   public static void main(String[] args) {
+//      TEGO NIE ROB IDZ DO SPRINGA
+
+
 //      1. Programowanie generyczne
 //    Chcielibyśmy zrobić pary różnych typów
       PairString pairString = new PairString("Pierwszy", "Drugi");

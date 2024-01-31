@@ -1,7 +1,6 @@
 package lekcja26;
 
 
-import lekcja14.Pracownik;
 
 import java.util.*;
 
@@ -94,15 +93,15 @@ public class Main {
         System.out.println(value);
       }
 
-      Comparator<Pracownik> pracownikComparator = Comparator.comparingInt(pracownik -> pracownik.getImie().length());
-      Map<Pracownik, String> pracownikStringMap = new TreeMap<>(pracownikComparator);
-      pracownikStringMap.put(new Pracownik("aaaaa", 2), "a");
-      pracownikStringMap.put(new Pracownik("bb", 3), "b");
-      pracownikStringMap.put(new Pracownik("ccc", 4), "c");
-
-      for(String value : pracownikStringMap.values()) {
-          System.out.println(value);
-      }
+//      Comparator<Pracownik> pracownikComparator = Comparator.comparingInt(pracownik -> pracownik.getImie().length());
+//      Map<Pracownik, String> pracownikStringMap = new TreeMap<>(pracownikComparator);
+//      pracownikStringMap.put(new Pracownik("aaaaa", 2), "a");
+//      pracownikStringMap.put(new Pracownik("bb", 3), "b");
+//      pracownikStringMap.put(new Pracownik("ccc", 4), "c");
+//
+//      for(String value : pracownikStringMap.values()) {
+//          System.out.println(value);
+//      }
 
       Set<String> set = new HashSet<>();
 

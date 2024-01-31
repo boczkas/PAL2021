@@ -29,8 +29,10 @@ public class Main {
         auto.zatankuj(20);
         System.out.println("Poziom paliwa po:");
         System.out.println(auto.poziomPaliwa);
+
+//        Metoda statyczna jakRobiAuto w Aucie
 //        Stwórz metodę minalRok(), która będzie zwiększać wiek psa o 1
 
-//        System.out.println(Auto.iloscAut);
+        System.out.println(Auto.iloscAut);
     }
 }

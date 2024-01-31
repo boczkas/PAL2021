@@ -2,6 +2,7 @@ package lekcja16cd;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
@@ -26,12 +27,24 @@ public class Main {
 
 //        --- checked exception
 
-//        File file = new File("lalala");
-//        FileInputStream inputStream = new FileInputStream(file);
+        File file = new File("lalala");
+        try {
+            FileInputStream inputStream = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            System.out.println("nie znaleziono pliku \n" + e);
+        }
 
 //        --- unchecked exception
         Scanner scanner = new Scanner(System.in);
 
         int liczba = scanner.nextInt();
+        System.out.println(liczba);
+
+        bedeRzucalaWyjtkiem();
+
+    }
+
+    public static void bedeRzucalaWyjtkiem() {
+        throw new NieTrzebaSprawdzacException();
     }
 }

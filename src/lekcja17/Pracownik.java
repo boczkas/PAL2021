@@ -38,33 +38,33 @@ public class Pracownik implements Comparable<Pracownik>, Krzykacz, Wulgarnik {
         System.out.println("Siema pracownika");
     }
 
-    @Override
-    public void krzycz() {
-        System.out.println("Krzycze po pracowniczemu");
-    }
+//    @Override
+//    public void krzycz() {
+//        System.out.println("Krzycze po pracowniczemu");
+//    }
 
     @Override
     public void mowGlosno() {
         System.out.println("mowie glosno po pracowniczemu");
     }
 
-//    @Override
-//    public void krzycz() {
-//        System.out.println("Krzycze po pracowniczemu");
-//    }
-//
-//    @Override
-//    public int compareTo(Pracownik o) {
-//        return Double.compare(this.wyplata, o.wyplata);
-//    }
+    @Override
+    public void krzycz() {
+        System.out.println("Krzycze po pracowniczemu");
+    }
+
+    @Override
+    public int compareTo(Pracownik o) {
+        return Double.compare(this.wyplata, o.wyplata);
+    }
 
     @Override
     public void nakrzycz(Wulgarnik wulgarnik) {
         System.out.println("Krzycze na " + wulgarnik);
     }
 
-    @Override
-    public int compareTo(Pracownik o) {
-        return this.imie.length() - o.imie.length();
-    }
+//    @Override
+//    public int compareTo(Pracownik o) {
+//        return this.imie.length() - o.imie.length();
+//    }
 }

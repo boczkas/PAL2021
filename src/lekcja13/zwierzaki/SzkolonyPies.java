@@ -12,4 +12,8 @@ public class SzkolonyPies extends Pies {
     public void sayHello() {
         System.out.println("Siema jestem " + name + " mój skill to: " + skill);
     }
+
+    public void robSztuczki() {
+        System.out.println("To ja bede " + skill);
+    }
 }

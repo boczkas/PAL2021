@@ -6,6 +6,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
+
+//    TEGO NIE ROB W SALI, IDZ DO LECJI 29
+
   public static void main(String[] args) throws InterruptedException {
     // 1. Race condition read-modify-write
 //      Counter counter = new Counter();

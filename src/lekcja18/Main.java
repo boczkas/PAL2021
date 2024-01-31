@@ -29,17 +29,17 @@ public class Main {
 //        Stworz Set psów i wypisz je wszystkie
 //        "Burek", "Reks", "Azor"
 
-//        Set<Pies> psy = new HashSet<>();
-//
-//        psy.add(new Pies("Burek"));
-//        psy.add(new Pies("Reks"));
-//        psy.add(new Pies("Azor"));
-//
-//        psy.add(new Pies("Azor"));
-//
-//        for (Pies pies : psy) {
-//            System.out.println(pies);
-//        }
+        Set<Pies> psy = new HashSet<>();
+
+        psy.add(new Pies("Burek"));
+        psy.add(new Pies("Reks"));
+        psy.add(new Pies("Azor"));
+
+        psy.add(new Pies("Azor"));
+
+        for (Pies pies : psy) {
+            System.out.println(pies);
+        }
 //        Dodaj kolejnego psa i sprawdz czy sie nie powtorzy
 
 
@@ -53,6 +53,10 @@ public class Main {
 
         imieIWiek.put("Przemek", 32);
 
+        Integer jan = imieIWiek.get("Jan");
+        System.out.println(jan);
+        System.out.println(imieIWiek.get("Przemek"));
+
 //        Iterowanie przez mape
 //        1. Wyciagniecie wszystkich kluczy
 
@@ -65,20 +69,19 @@ public class Main {
         for(Integer wiek : imieIWiek.values()) {
             System.out.println(wiek);
         }
-
+//
         System.out.println(imieIWiek.get("Przemek"));
-//
-//        Map<Pies, Integer> piesIWiek = new HashMap<>();
-//        !!! Najpierw powkładać do mapy obiekty które zapisze w zmiennych !!!
-//        piesIWiek.put(new Pies("Azor"), 2);
-//        piesIWiek.put(new Pies("Burek"), 4);
-//        piesIWiek.put(new Pies("Reks"), 6);
-//
-//        System.out.println(piesIWiek.get(new Pies("Azor")));
-//
-//        Map<Integer, Osoba> peseleIOsoby = new HashMap<>();
-//        peseleIOsoby.put(123456789, new Osoba("Jan", "Kowalski"));
-//        System.out.println("3 ===================");
+
+        Map<Pies, Integer> piesIWiek = new HashMap<>();
+        piesIWiek.put(new Pies("Azor"), 2);
+        piesIWiek.put(new Pies("Burek"), 4);
+        piesIWiek.put(new Pies("Reks"), 6);
+
+        System.out.println(piesIWiek.get(new Pies("Azor")));
+
+        Map<Integer, Osoba> peseleIOsoby = new HashMap<>();
+        peseleIOsoby.put(123456789, new Osoba("Jan", "Kowalski"));
+        System.out.println("3 ===================");
 
 //        Stworz mape gdzie kluczem jest Pies, a wartością Osoba (nowa klasa, lub użycie istniejącej)
 
@@ -86,6 +89,7 @@ public class Main {
 //        Wartościami sa Osoby o imionach: "Artur", "Karol", "Staszek"
 //        Wyciągnij wszyskie klucze
 //        Wyciągnij wszystkie wartości ze swojej mapy
+//        Wyciagnij pojedyncza wartosc
 
 //        2. Wyciąganie pojedynczej wartości
 //        System.out.println(imieIWiek.get("Jan"));
