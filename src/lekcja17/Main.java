@@ -41,20 +41,20 @@ public class Main {
         };
         wolacz.wydajDzwiek();
         List<Krzykacz> krzykacze = List.of(new Pies(), new Kot(), new Trabka());
-//
-//        for(Krzykacz krzykacz : krzykacze) {
-//            krzykacz.wydajDzwiek();
-//        }
+
+        for(Krzykacz krzykacz : krzykacze) {
+            krzykacz.wydajDzwiek();
+        }
 
 
-//        Krzykacz krzykacz = new Krzykacz() {
-//            @Override
-//            public void wydajDzwiek() {
-//                System.out.println("Krzycz!");
-//            }
-//        };
-//
-//        Krzykacz krzykacz1 = new Pracownik("lala", 10);
+        Krzykacz krzykacz = new Krzykacz() {
+            @Override
+            public void wydajDzwiek() {
+                System.out.println("Krzycz!");
+            }
+        };
+
+        Krzykacz krzykacz1 = new Pracownik("lala", 10);
         System.out.println(Krzykacz.a);
 
 //
@@ -78,10 +78,11 @@ public class Main {
 //        W interfejsach można można tworzyć metody statyczne.
 //        Dołóżmy zwiększGlosnosc(aktualnaGlosnosc) do naszego Krzykacza
 
-        Krzykacz.zwiekszGlosnosc(10);
+//        Krzykacz.zwiekszGlosnosc(10);
         ania.nakrzycz(barylek);
-//
-//        ania.mowGlosno();
+
+        ania.siema();
+        ania.mowGlosno();
 //
 //        Co gdybyśmy chcieli do naszego interfejsu dołożyć metodę?
 //        Pojawia się problem, że musimy ją zaimplementować we wszystkich klasach implementujących

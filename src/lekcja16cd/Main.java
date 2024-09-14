@@ -27,6 +27,9 @@ public class Main {
 
 //        --- checked exception
 
+//        bedeRzucalaWyjtkiem();
+
+
         File file = new File("lalala");
         try {
             FileInputStream inputStream = new FileInputStream(file);
@@ -40,7 +43,6 @@ public class Main {
         int liczba = scanner.nextInt();
         System.out.println(liczba);
 
-        bedeRzucalaWyjtkiem();
 
     }
 

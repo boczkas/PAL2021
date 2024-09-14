@@ -69,7 +69,7 @@ public class Main {
         for(Integer wiek : imieIWiek.values()) {
             System.out.println(wiek);
         }
-//
+
         System.out.println(imieIWiek.get("Przemek"));
 
         Map<Pies, Integer> piesIWiek = new HashMap<>();
@@ -82,7 +82,7 @@ public class Main {
         Map<Integer, Osoba> peseleIOsoby = new HashMap<>();
         peseleIOsoby.put(123456789, new Osoba("Jan", "Kowalski"));
         System.out.println("3 ===================");
-
+//
 //        Stworz mape gdzie kluczem jest Pies, a wartością Osoba (nowa klasa, lub użycie istniejącej)
 
 //        Dodaj do niej 3 Psy o imionach: "Burek", "Reks", "Azor"
@@ -92,8 +92,8 @@ public class Main {
 //        Wyciagnij pojedyncza wartosc
 
 //        2. Wyciąganie pojedynczej wartości
-//        System.out.println(imieIWiek.get("Jan"));
-//        System.out.println("4 ===================");
+        System.out.println(imieIWiek.get("Jan"));
+        System.out.println("4 ===================");
 
 //
 
@@ -105,5 +105,8 @@ public class Main {
 //        System.out.println("5 ===================");
 
 //        Wyciągnij wszystkie wartości ze swojej mapy
+
+
+//        ZADAĆ ZADANIE Z EKSPRESEM!
     }
 }

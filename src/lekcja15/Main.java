@@ -46,26 +46,26 @@ public class Main {
         kociaki.add(new Kot("Jozek"));
         kociaki.add(new Kot("Mruczek"));
         kociaki.add(new Kot("Wariot"));
-
+//
         for (Kot kociak : kociaki) {
             System.out.println(kociak);
         }
 
         System.out.println("=======================");
-
+//
         for (int i = 0; i < kociaki.size(); i++) {
             System.out.println(kociaki.get(i));
         }
 
         System.out.println("======================");
-
- //        6. Usuwanie elementów z listy
+//
+//         6. Usuwanie elementów z listy
         kociaki.remove(1);
 
         for (Kot kociak : kociaki) {
             System.out.println(kociak);
         }
-//
+
         System.out.println("======================");
         kociaki.remove(new Kot("Mruczek"));
 
@@ -76,8 +76,8 @@ public class Main {
 //        7. Lista liczb całkowitych
 //        ArrayList<int> liczbyCalkowite = new ArrayList<int>();
         ArrayList<Integer> liczbyCalkowite = new ArrayList<>();
-        Integer liczba = 10;
-        liczbyCalkowite.add(liczba);
+//        Integer liczba = 10;
+//        liczbyCalkowite.add(liczba);
 
 //        Integer - typ opakowywujący. Występują dla każdego typu prymitywnego
 //        int - Integer

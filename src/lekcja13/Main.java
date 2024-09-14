@@ -2,7 +2,7 @@ package lekcja13;
 
 
 import lekcja13.dom.Osoba;
-import lekcja13.firma.Obywatel;
+//import lekcja13.firma.Obywatel;
 import lekcja13.zwierzaki.SpiacyPies;
 import lekcja13.zwierzaki.SzkolonyPies;
 import lekcja13.zwierzaki.Pies;
@@ -27,8 +27,8 @@ public class Main {
         Osoba domowaOsoba = new Osoba();
         String tekst = "cos";
 
-        Obywatel obywatel = new Obywatel("Staszek");
-        obywatel.siema();
+//        Obywatel obywatel = new Obywatel("Staszek");
+//        obywatel.siema();
 
 //        lekcja13.firma.Osoba firmowaOsoba = new lekcja13.firma.Osoba();
 

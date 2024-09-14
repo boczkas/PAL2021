@@ -12,13 +12,15 @@ public class Main {
 //
 //        Tworząc zmienną:
 //              <typ> <nazwa> = <wartość>;
-//              int liczba = 5;
-//              String tekst = "Imie";
+        int liczba = 5;
+        System.out.println(liczba);
+        String tekst = "Imie";
+        System.out.println(tekst);
 //        Stwórzmy zmienną typu całkowitego i nadajmy jej wartość 10.
 //        Wypiszmy ją na ekran.
 //        Stwórzmy zmienną do przechowywania tekstu. Wpisz do niej swoje imię.
 //        Wypiszmy ją na ekran.
-//        System.out.println(liczba + tekst);
+        System.out.println(liczba + tekst);
 
 
 // ============================ TYPY DANYCH DLA LICZB =======================
@@ -35,37 +37,37 @@ public class Main {
 // float 4 bytes 7 decimal digits
 // double 8 bytes 16 decimal digits
 
-        int liczba = 4;
-        System.out.println(liczba);
-        byte bajcik = 1;
-        int intigerek = 1;
-
-        System.out.println(bajcik);
-        System.out.println(intigerek);
+//        int liczba = 4;
+//        System.out.println(liczba);
+//        byte bajcik = 1;
+//        int intigerek = 1;
+//
+//        System.out.println(bajcik);
+//        System.out.println(intigerek);
 
 //        bajcik = 129;
 //        intigerek = 129;
 
-        float floacik = 0.123F;
-        double dablik = 0.123;
+//        float floacik = 0.123F;
+//        double dablik = 0.123;
+//
+//        System.out.println(floacik);
+//        System.out.println(dablik);
 
-        System.out.println(floacik);
-        System.out.println(dablik);
-
-        floacik = 0.123456789F;
-        dablik = 0.123456789;
-
-        System.out.println("lubie placki: " + floacik);
-        System.out.println("i czeresnie: " + dablik);
-
-        System.out.println(2 - 1.1);
-
-        int dzien = 31;
-        String miesiac = "maja";
-        int rok = 2022;
-
-        System.out.println("Dzisiaj jest " + dzien + " " + miesiac + " " + rok);
-
+//        floacik = 0.123456789F;
+//        dablik = 0.123456789;
+//
+//        System.out.println("lubie placki: " + floacik);
+//        System.out.println("i czeresnie: " + dablik);
+//
+//        System.out.println(2 - 1.1);
+//
+//        int dzien = 31;
+//        String miesiac = "maja";
+//        int rok = 2022;
+//
+//        System.out.println("Dzisiaj jest " + dzien + " " + miesiac + " " + rok);
+//
 
 
 

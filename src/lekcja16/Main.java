@@ -14,9 +14,9 @@ public class Main {
 //          - Stworzyć sobie enuma do dni, na zasanie PN, WT, SR.
 //              Enum to tak na prawdę klasa. To co sobie tam tworzymy to instancje tej klasy.
 
-        DzienTygodnia dzienTygodnia = DzienTygodnia.PN;
+        DzienTygodnia dzienTygodnia = DzienTygodnia.CZ;
 
-        if (dzienTygodnia.equals(DzienTygodnia.PN)) {
+        if (dzienTygodnia.equals(DzienTygodnia.ND)) {
             System.out.println("Dzis jest niedziela");
         }
 
